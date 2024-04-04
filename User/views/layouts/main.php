@@ -4,7 +4,7 @@
     <base href="<?php echo $_SERVER['SCRIPT_NAME'] ?>" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FUCHAO</title>
+    <title>TECHMU</title>
 
 
     <link rel="canonical" href="http://localhost"/>
@@ -41,8 +41,16 @@
 </head>
 <body>
 <?php require_once 'header.php'; ?>
-
-
+<!--<div class="anhhd">-->
+<!--    <div class="header-text">-->
+<!--    <h1>TECHMU VIỆT NAM</h1>-->
+<!--    <p>CÔNG TY TNHH ĐÀO TẠO VÀ CHUYỂN GIAO CÔNG NGHỆ SỐ VIỆT NAM</p>-->
+<!--    <button>Tìm Hiểu Thêm</button>-->
+<!--</div>-->
+<!--</div>-->
+</div>
+<?php echo $this->content; ?>
+</div>
 <?php require_once 'footer.php'; ?>
 
 </body>

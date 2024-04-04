@@ -1,168 +1,135 @@
-
-
-<div class="header-top nopc" style="background-image: url(assets/images/111.jpg);">
-    <div class="container" >
-        <div class="row" >
-            <!--            <div class=" col-md-4 col-sm-4 col-xs-12">-->
-
-            <div class="mini-logo" >
-                <ul class="header-navigation" data-show-menu-on-mobile="" >
-
-                    <!--                    <li>-->
-                    <!--                            <img src="assets/images/icon-flag-vn.png" class="icon-language">-->
-                    <!---->
-                    <!--                       <a href="index.php?controller=user&action=login" class="link-icon-laguage material-button submenu-toggle">-->
-                    <!--                           <img src="assets/images/avatar.jpg" class="icon-language">-->
-                    <!--                       </a>-->
-                    <!--                    </li>-->
-                    <!--                    <li>-->
-                    <!--                        <div class="navbar-custom-menu">-->
-                    <!--                            <ul class="nav navbar-nav" >-->
-                    <!--                                <li class="dropdown user user-menu" >-->
-                    <!--                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-                    <!--                                        <img src="assets/images/avatar.jpg" class="user-image" style="width: 23px; " >-->
-                    <!--                                        <span class="hidden-xs"></span>-->
-                    <!--                                    </a>-->
-                    <!--                                    <ul class="dropdown-menu">-->
-                    <!--                                        <li class="user-header">-->
-                    <!--                                            <img src="assets/images/avatar.jpg" class="img-circle" alt="User Image">-->
-                    <!--                                        </li>-->
-                    <!---->
-                    <!--                                        <li class="user-footer">-->
-                    <!--                                            <div class="pull-right">-->
-                    <!--                                               <a href="index.php?controller=user&action=login" class="btn btn-default btn-flat">Đăng Nhập</a>-->
-                    <!--                                           </div>-->
-                    <!--                                      </li>-->
-                    <!--                                    </ul>-->
-                    <!--                                </li>-->
-                    <!--                            </ul>-->
-                    <!--                        </div>-->
-                    <!--                    </li>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webthuctap</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+<body>
+<!---------------------header------------------>
+<header>
+    <div class="top">
+        <div class="container">
+            <div class="header-top row">
+                <p>TECHMU<span></span></p>
+                <ul>
+                    <!--<i class="fas fa-times"></i>-->
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Chiến lược</a></li>
+                    <li><a href="">Hoạt động</a></li>
+                    <li><a href="">Liên hệ</a></li>
                 </ul>
+                <!--<i class="fas fa-bars"></i>-->
             </div>
         </div>
     </div>
-</div>
-<span class="ajax-message"></span>
+    <div class="bg-image">
 
-<header class="header">
+    </div>
 
-    <div class="header-wrapper container">
-        <div class="toggle-sidebar material-button">
-            <i class="material-icons">&#xE5D2;</i>
-        </div>
-        <div class="logo-box">
-            <h1>
-
-            </h1>
-        </div>
-
-        <div class="header-menu">
-            <div class="abc">
-                <a href="index.php" class="home-link">
-                    <img class="logo" src="assets/images/logo.png">
-                </a>
-                <div>
-                    <div class="h">
-                        <form action="index.php?controller=product&action=search"  method="get" id="form-search" class="form-search">
-                            <div class="form-search">
-                                <input type="hidden" name="controller" value="product">
-                                <input type="hidden" name="action" value="search">
-                                <input type="text" name="search" class="form-control form-search-input" placeholder="Search anything..." >
-                                <input type="submit" name="submit"value=" ">
-                            </div>
-                        </form>
-
-                    </div>
-                    <ul class="header-navigation" data-show-menu-on-mobile>
-
-                        <li>
-                            <a href="index.php" class="material-button submenu-toggle">Trang chủ</a>
-                        </li>
-
-                        <li>
-                            <a href="news.html" class="material-button submenu-toggle">Tin Tức</a>
-                        </li>
-                        <li>
-                            <a href="danh-sach-san-pham.html" class="material-button submenu-toggle">Sản phẩm</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="material-button submenu-toggle">Liên Hệ</a>
-                        </li>
-                        <li>
-                            <a href="gio-hang-cua-ban.html" class="cart-link">Giỏ hàng
-                                <i class="fa fa-cart-plus"></i>
-                                <?php
-                                $cart_total = 0;
-                                if (isset($_SESSION['cart'])) {
-                                    foreach ($_SESSION['cart'] AS $cart) {
-                                        $cart_total += $cart['quantity'];
-                                    }
-                                }
-                                ?>
-                                <span class="cart-amount">
-                                <?php echo $cart_total; ?>
-                            </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class=" info">
-                    <a class="info-contact" href="tel:0338680362">
-                        <i class="fas fa-phone-alt"></i> 0338680362
-                    </a>
-                    <a class="info-contact" href="mailto:haotienphung@gmail.com">
-                        <i class="far fa-envelope"></i> fuchaogame@gmail.com
-                    </a>
-                </div>
-                <div class="header-right with-seperator">
-                    <!-- header right menu start -->
-                    <ul class="header-navigation">
-                        <li>
-                            <a href="/gio-hang-cua-ban.html" class="">
-                                <i class="fa fa-cart-plus"></i>
-                                <span class="cart-amount-mobile">
-                                <?php echo $cart_total; ?>
-                        </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- header right menu end -->
-
-                </div>
-            </div>
 </header>
-<div class="sidebar">
-    <div class="sidebar-wrapper">
 
-        <div class="sidebar-logo">
-            <a href="#"></a>
-            <div class="sidebar-toggle-button">
-                <i class="material-icons">&#xE317;</i>
-            </div>
-        </div>
-        <div id="mobileMenu">
-            <div class="sidebar-seperate"></div>
-        </div>
-        <ul class="sidebar-menu">
-            <li>
-                <a href="index.php" class="material-button submenu-toggle">Trang chủ</a>
-            </li>
-            <li>
-                <a href="#" class="material-button submenu-toggle">Sản phẩm</a>
-            </li>
-            <li>
-                <a href="#" class="material-button submenu-toggle">Tin tức</a>
-            </li>
-            <li>
-                <a href="#" class="material-button submenu-toggle">Đăng nhập</a>
-            </li>
-        </ul>
-        <!-- sidebar menu end -->
-        <div class="sidebar-seperate"></div>
-        <!-- sidebar menu end -->
-    </div>
-</div>
+</body>
+</html>
+<style>
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    li{
+        list-style: none;
 
+    }
+    .container{
+        max-width: 1024px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 10vh;
+        position: relative;
+        background-color: seashell;
+    }
+    .bg-image{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.6;
+        background-color: seashell;
+    }
+    .top{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    .header-top{
+        justify-content: space-between;
+        padding: 12px 0;
+        align-items: center;
+    }
+    .header-top p {
+        font-family: var(--logo-text-font);
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: var(--main-color);
 
+    }
+    .header-top ul{
+        display: flex;
+    }
+    .header-top ul li{
+        margin-left: 12px;
+        position: relative;
+
+    }
+    .header-top ul li::after{
+        position: absolute;
+        content: "";
+        display: block;
+        bottom: -2px;
+        height: 4px;
+        width: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: var(--main-color);
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
+    .header-top ul li:hover::after{
+        width: 100%;
+    }
+    .header-top ul li a{
+        font-family: var(--main-text-font);
+        color: black;
+        black  font-weight: bold;
+    }
+    .header-top ul i{
+        font-size: 32px;
+        color: white;
+        margin: 12px 0 0 12px;
+        cursor: pointer;
+        margin-bottom: 150px;
+        display: none;
+    }
+    .header-top> i{
+        font-size: 32px;
+        color: var(--main-color);
+        cursor: pointer;
+    }
+
+</style>
