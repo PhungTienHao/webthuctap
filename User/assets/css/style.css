@@ -29,7 +29,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    /*height: 10vh;*/
+    height: 15px;
     position: relative;
 }
 /*.bg-image{*/
@@ -43,11 +43,21 @@ header{
 .top{
     position: absolute;
     width: 100%;
-    z-index: 1;
-}
+    z-index: 1;}
+/*.top{*/
+/*    background-position: center;*/
+/* background-repeat: no-repeat;*/
+/*  background-size: cover;*/
+/*   width: 100vw;*/
+/*   height: 10vh;*/
+/*    position: relative;*/
+/*   background-color: black;*/
+/*   opacity: 0.6;*/
+
+/*}*/
 .header-top{
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 32px 0;
     align-items: center;
 }
 .header-top p {

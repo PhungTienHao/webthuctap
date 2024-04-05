@@ -12,7 +12,7 @@
 </head>
 <body>
 <!---------------------header------------------>
-<header>
+<!--<header>-->
     <div class="top">
         <div class="container">
             <div class="header-top row">
@@ -33,7 +33,7 @@
 <!---->
 <!--    </div>-->
 
-</header>
+<!--</header>-->
 
 </body>
 </html>
@@ -54,6 +54,18 @@
     /*    display: flex;*/
     /*    flex-wrap: wrap;*/
     /*}*/
+.top{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    /*background-color: seashell;*/
+    /*background-image: url(assets/images/bg.jpg);*/
+    background-color: black;
+    opacity: 0.6;
+}
     header{
         background-position: center;
         background-repeat: no-repeat;
@@ -82,7 +94,7 @@
     }
     .header-top{
         justify-content: space-between;
-        padding: 12px 0;
+        padding: 32px 0;
         align-items: center;
     }
     .header-top p {
