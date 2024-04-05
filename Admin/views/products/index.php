@@ -1,5 +1,5 @@
 <?php
-require_once 'helpers/Helper.php';
+//require_once 'helpers/Helper.php';
 ?>
 
 <h2>Danh sách sản phẩm</h2>

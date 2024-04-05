@@ -27,17 +27,17 @@ class ProductController extends Controller
       if (isset($_GET['name'])) {
           $params['query_additional'] = '&name=' . $_GET['name'];
       }
-      $count_total = $category_model->countTotal();
-      $params['total'] = $count_total;
-      $params['page'] = $page;
-      $pagination = new Pagination($params);
-      $pages = $pagination->getPagination();
-      $categories = $category_model->getAllPagination($params);
+//      $count_total = $category_model->countTotal();
+//      $params['total'] = $count_total;
+//      $params['page'] = $page;
+//      $pagination = new Pagination($params);
+//      $pages = $pagination->getPagination();
+//      $categories = $category_model->getAllPagination($params);
 
     $this->content = $this->render('views/products/index.php', [
         'products' => $products,
         'categories' => $categories,
-        'pages' => $pages,
+//        'pages' => $pages,
     ]);
     require_once 'views/layouts/main.php';
   }

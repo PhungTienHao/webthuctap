@@ -46,10 +46,10 @@ public $is_feature;
             $str_search .= " AND `status` = $status";
         }
         $obj_select = $this->connection
-            ->prepare("SELECT products.*, categories.name AS category_name FROM products 
+            ->prepare("SELECT products.*, categories.title AS category_name FROM products 
                         INNER JOIN categories ON categories.id = products.category_id
                         WHERE TRUE $this->str_search
-                        ORDER BY products.created_at DESC
+                       ORDER BY products.created_at DESC
                         ");
 
         $arr_select = [];
