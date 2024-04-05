@@ -1,7 +1,7 @@
 <?php
 require_once 'controllers/Controller.php';
 require_once 'models/Category.php';
-require_once 'models/Pagination.php';
+
 
 class CategoryController extends Controller
 {
@@ -32,7 +32,7 @@ class CategoryController extends Controller
 
     $this->content = $this->render('views/categories/index.php', [
       'categories' => $categories,
-      'pages' => $pages,
+
     ]);
     require_once 'views/layouts/main.php';
   }

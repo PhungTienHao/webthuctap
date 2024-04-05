@@ -29,9 +29,9 @@
             </div>
         </div>
     </div>
-    <div class="bg-image">
-
-    </div>
+<!--    <div class="bg-image">-->
+<!---->
+<!--    </div>-->
 
 </header>
 
@@ -46,14 +46,14 @@
         list-style: none;
 
     }
-    .container{
-        max-width: 1024px;
-        margin: auto;
-    }
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-    }
+    /*.container{*/
+    /*    max-width: 1024px;*/
+    /*    margin: auto;*/
+    /*}*/
+    /*.row{*/
+    /*    display: flex;*/
+    /*    flex-wrap: wrap;*/
+    /*}*/
     header{
         background-position: center;
         background-repeat: no-repeat;
@@ -61,17 +61,20 @@
         width: 100vw;
         height: 10vh;
         position: relative;
-        background-color: seashell;
-    }
-    .bg-image{
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
+        /*background-color: seashell;*/
+        /*background-image: url(assets/images/bg.jpg);*/
         background-color: black;
         opacity: 0.6;
-        background-color: seashell;
-    }
+        }
+        /*.bg-image{*/
+    /*    position: absolute;*/
+    /*    content: "";*/
+    /*    width: 100%;*/
+    /*    height: 10%;*/
+    /*    background-color: black;*/
+    /*    opacity: 0.6;*/
+    /*    background-color: seashell;*/
+    /*}*/
     .top{
         position: absolute;
         width: 100%;

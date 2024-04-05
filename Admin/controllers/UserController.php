@@ -1,7 +1,7 @@
 <?php
 require_once 'controllers/Controller.php';
 require_once 'models/User.php';
-require_once 'Models/Pagination.php';
+
 
 class UserController extends Controller {
 public function register(){
