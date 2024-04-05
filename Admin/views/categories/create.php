@@ -3,10 +3,10 @@
 <style>
 
 </style>
-<h2>Thêm mới danh mục</h2>
+<h2>Thêm mới dịch vụ</h2>
 <form method="post" action="" enctype="multipart/form-data">
     <div class="form-group">
-        <label style="color: black">Tên danh mục</label>
+        <label style="color: black">Tên dịch vụ</label>
         <input type="text" name="name" value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''; ?>"
                class="form-control"/>
     </div>
@@ -16,10 +16,15 @@
         <img src="#" id="img-preview" style="display: none" width="100" height="100"/>
     </div>
     <div class="form-group">
-        <label style="color: black">Mô tả về danh mục</label>
+        <label style="color: black">Mô tả về dịch vụ</label>
         <textarea class="form-control"
-                  name="description"><?php echo isset($_POST['description']) ? $_POST['description'] : ''; ?></textarea>
+                  name="content"><?php echo isset($_POST['content']) ? $_POST['content'] : ''; ?></textarea>
     </div>
+    <div class="form-group">
+            <label style="color: black">Mô tả chi tiết về dịch vụ</label>
+            <textarea class="form-control"
+                      name="comment"><?php echo isset($_POST['comment']) ? $_POST['comment'] : ''; ?></textarea>
+        </div>
 <!--    <div class="form-group">-->
 <!--      --><?php
 //      $selected_active = '';

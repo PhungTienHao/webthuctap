@@ -12,11 +12,7 @@ class User extends Model {
     public $phone;
     public $address;
     public $email;
-    public $avatar;
-    public $created_at;
-    public $str_search;
-    public $quyenhan;
-    public $page;
+
 
     public function __construct()
     {
