@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
 </head>
 <body>
 <!---------------------header------------------>
@@ -20,10 +21,28 @@
                 <ul>
                     <!--<i class="fas fa-times"></i>-->
                     <li><a href="">Trang chủ</a></li>
-                    <li><a href="">Giới thiệu</a></li>
+                    <li><div class="dropdown"> <a href="">Về Chúng Tôi  </a>
+                            <div class="dropdown-content">
+                                <ul> <li><a title="123" href="#">1222</a></li> </ul>
+                                 <ul>   <li><a title="123445" href="#">122345</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li>
                     <li><a href="">Chiến lược</a></li>
                     <li><a href="">Hoạt động</a></li>
-                    <li><a href="">Liên hệ</a></li>
+                    <li><div class="dropdown"> <a href="">Dịch vụ</a>
+                            <div class="dropdown-content">
+                                <ul> <li><a title="" href="#">Quảng cáo và truyền thông</a></li> </ul>
+                                <ul>   <li><a title="" href="#">Tư vấn thiết kế website</a></li> </ul>
+                                <ul>   <li><a title="" href="#">dịch vụ tên miền và lưu trữ dữ liệu</a></li> </ul>
+                                <ul> <li><a title="" href="#"> Giải pháp TMDT</a></li> </ul>
+                                <ul> <li><a title="" href="#"> Giải pháp bảo mật an ninh ATTTM</a></li> </ul>
+
+                            </div>
+                        </div>
+                    </li>
                 </ul>
                 <!--<i class="fas fa-bars"></i>-->
             </div>
@@ -146,5 +165,24 @@
         color: var(--main-color);
         cursor: pointer;
     }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        height: 50px;
+    }
 
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 </style>
