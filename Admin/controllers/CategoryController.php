@@ -1,6 +1,7 @@
 <?php
 require_once 'controllers/Controller.php';
 require_once 'models/Category.php';
+require_once 'Models/Pagination.php';
 
 
 class CategoryController extends Controller
@@ -26,13 +27,13 @@ class CategoryController extends Controller
     $count_total = $category_model->countTotal();
     $params['total'] = $count_total;
     $params['page'] = $page;
-//    $pagination = new Pagination($params);
-//    $pages = $pagination->getPagination();
+    $pagination = new Pagination($params);
+    $pages = $pagination->getPagination();
     $categories = $category_model->getAllPagination($params);
 
     $this->content = $this->render('views/categories/index.php', [
       'categories' => $categories,
-
+        'pages' => $pages,
     ]);
     require_once 'views/layouts/main.php';
   }
@@ -42,7 +43,7 @@ class CategoryController extends Controller
     if (isset($_POST['submit'])) {
       $title = $_POST['title'];
       $content = $_POST['content'];
-     // $status = $_POST['status'];
+      $comment = $_POST['comment'];
       $avatar_files = $_FILES['avatar'];
 
       if (empty($title)) {

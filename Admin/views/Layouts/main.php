@@ -61,3 +61,8 @@
 <script src="assets/js/script.js"></script>
 </body>
 </html>
+<style>
+    .content {
+        min-height: 800px;
+    }
+</style>

@@ -39,7 +39,7 @@ if (isset($_SESSION['user'])) {
                             <p>
                                 <?php echo $username; ?>
 
-                                <small>Thành viên từ năm <?php echo $year; ?></small>
+<!--                                <small>Thành viên từ năm --><?php //echo $year; ?><!--</small>-->
                             </p>
                         </li>
 
@@ -93,18 +93,11 @@ if (isset($_SESSION['user'])) {
             </li>
             <li>
                 <a href="index.php?controller=user&action=index" class="b">
-                    <i class="fa fa-user"></i> <span>Quản lý Tài Khoản </span>
+                    <i class="fa fa-user"></i> <span>Quản lý Tài Khoản Admin </span>
                     <span class="pull-right-container">
             </span>
                 </a>
             </li>
-<!--            <li>-->
-<!--                <a href="index.php?controller=product&action=spnb" class="b">-->
-<!--                    <i class="fa fa-code"></i> <span>Quản lý Sản Phẩm Nổi Bật</span>-->
-<!--                    <span class="pull-right-container">-->
-<!--            </span>-->
-<!--                </a>-->
-<!--            </li>-->
             <li>
                 <a href="index.php?controller=assess&action=index" class="b">
                     <i class="fa fa-code"></i> <span>Xem Đánh Giá Khách Hàng</span>
@@ -112,20 +105,6 @@ if (isset($_SESSION['user'])) {
             </span>
                 </a>
           </li>
-<!-- <li>-->
-<!--                <a href="index.php?controller=order&action=index" class="b">-->
-<!--                    <i class="fa fa-code"></i> <span>Kiểm Tra Đơn Hàng</span>-->
-<!--                    <span class="pull-right-container">-->
-<!--            </span>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="index.php?controller=new&action=index" class="b">-->
-<!--                    <i class="fa fa-code"></i> <span>Quản lý Tin Tức</span>-->
-<!--                    <span class="pull-right-container">-->
-<!--            </span>-->
-<!--                </a>-->
-<!--            </li>-->
         </ul>
     </section>
     <!-- /.sidebar -->
@@ -133,6 +112,7 @@ if (isset($_SESSION['user'])) {
 
 <!-- Breadcrumd Wrapper. Contains breadcrumb -->
 <div class="breadcrumb-wrap content-wrap content-wrapper">
+
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
@@ -146,9 +126,7 @@ if (isset($_SESSION['user'])) {
     </section>
 </div>
 
-<!-- Messaeg Wrapper. Contains messaege error and success -->
 <div class="message-wrap content-wrap content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <?php if (isset($_SESSION['error'])): ?>
             <div class="alert alert-danger">
@@ -158,7 +136,6 @@ if (isset($_SESSION['user'])) {
                 ?>
             </div>
         <?php endif; ?>
-
         <?php if (!empty($this->error)): ?>
             <div class="alert alert-danger">
                 <?php
@@ -205,7 +182,9 @@ if (isset($_SESSION['user'])) {
 <!--</style>-->
 
 <style>
-
+    .content-wrapper {
+        min-height: 20px;
+    }
 
     section.content-header {
         height: 70px;

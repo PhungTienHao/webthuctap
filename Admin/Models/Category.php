@@ -21,10 +21,10 @@ VALUES (:name, :avatar, :content, :comment)";
       ->prepare($sql_insert);
 
     $arr_insert = [
-      ':name' => $this->titlt,
+      ':title' => $this->title,
       ':avatar' => $this->avatar,
-      ':description' => $this->content,
-      ':status' => $this->comment
+      ':content' => $this->content,
+      ':comment' => $this->comment
     ];
     return $obj_insert->execute($arr_insert);
   }

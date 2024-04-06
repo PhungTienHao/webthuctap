@@ -1,5 +1,4 @@
 
-
 <h1>Danh sách category</h1>
 <a href="index.php?controller=category&action=create" class="btn btn-primary">
     <i class="fa fa-plus"></i> Thêm mới
@@ -11,8 +10,7 @@
         <th>Avatar</th>
         <th>Description</th>
         <th>Status</th>
-        <th>Created_at</th>
-        <th>Updated_at</th>
+
         <th></th>
     </tr>
   <?php if (!empty($categories)): ?>
@@ -22,7 +20,7 @@
                 <?php echo $category['id']; ?>
               </td>
               <td>
-                <?php echo $category['name']; ?>
+                <?php echo $category['title']; ?>
               </td>
               <td>
                 <?php if (!empty($category['avatar'])): ?>
@@ -30,26 +28,10 @@
                 <?php endif; ?>
               </td>
               <td>
-                <?php echo $category['description']; ?>
+                <?php echo $category['content']; ?>
               </td>
               <td>
-                <?php
-                $status_text = 'Active';
-                if ($category['status'] == 0) {
-                  $status_text = 'Disabled';
-                }
-                echo $status_text;
-                ?>
-              </td>
-              <td>
-                <?php echo date('d-m-Y H:i:s', strtotime($category['created_at'])); ?>
-              </td>
-              <td>
-                <?php
-                if (!empty($category['updated_at'])) {
-                  echo date('d-m-Y H:i:s', strtotime($category['updated_at']));
-                }
-                ?>
+                  <?php echo $category['comment']; ?>
               </td>
               <td>
                   <a href="index.php?controller=category&action=detail&id=<?php echo $category['id'] ?>"
@@ -77,5 +59,5 @@
       </tr>
   <?php endif; ?>
 </table>
-<!--  hiển thị phân trang-->
+
 
