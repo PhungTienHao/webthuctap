@@ -40,12 +40,12 @@ class CategoryController extends Controller
   public function create()
   {
     if (isset($_POST['submit'])) {
-      $name = $_POST['name'];
-      $description = $_POST['description'];
+      $title = $_POST['title'];
+      $content = $_POST['content'];
      // $status = $_POST['status'];
       $avatar_files = $_FILES['avatar'];
 
-      if (empty($name)) {
+      if (empty($title)) {
         $this->error = 'Cần nhập tên';
       }
       else if ($avatar_files['error'] == 0) {
@@ -76,10 +76,10 @@ class CategoryController extends Controller
 
         $category_model = new Category();
 
-        $category_model->name = $name;
+        $category_model->title = $title;
         $category_model->avatar = $avatar;
-        $category_model->description = $description;
-       // $category_model->status = $status;
+        $category_model->content = $content;
+        $category_model->comment = $comment;
 
         $is_insert = $category_model->insert();
         if ($is_insert) {

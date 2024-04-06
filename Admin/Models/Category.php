@@ -4,27 +4,27 @@ require_once 'models/Model.php';
 class Category extends Model {
 
   public $id;
-  public $name;
+  public $title;
   public $avatar;
-  public $description;
-  public $status;
+  public $content;
+  public $comment;
   public $created_at;
   public $updated_at;
 
 
   public function insert() {
     $sql_insert =
-      "INSERT INTO categories(`name`, `avatar`, `description`, `status`)
-VALUES (:name, :avatar, :description, :status)";
+      "INSERT INTO categories(`name`, `avatar`, `content`, `comment`)
+VALUES (:name, :avatar, :content, :comment)";
 
     $obj_insert = $this->connection
       ->prepare($sql_insert);
 
     $arr_insert = [
-      ':name' => $this->name,
+      ':name' => $this->titlt,
       ':avatar' => $this->avatar,
-      ':description' => $this->description,
-      ':status' => $this->status
+      ':description' => $this->content,
+      ':status' => $this->comment
     ];
     return $obj_insert->execute($arr_insert);
   }
@@ -39,10 +39,10 @@ VALUES (:name, :avatar, :description, :status)";
 
       $str_search .= " AND `name` LIKE '%$name%'";
     }
-    if (isset($params['status'])) {
-      $status = $params['status'];
-      $str_search .= " AND `status` = $status";
-    }
+//    if (isset($params['status'])) {
+//      $status = $params['status'];
+//      $str_search .= " AND `status` = $status";
+//    }
     $sql_select_all = "SELECT * FROM categories $str_search";
     $obj_select_all = $this->connection
       ->prepare($sql_select_all);
@@ -89,14 +89,14 @@ VALUES (:name, :avatar, :description, :status)";
    */
   public function update($id)
   {
-    $obj_update = $this->connection->prepare("UPDATE categories SET `name` = :name, `avatar` = :avatar, `description` = :description, `status` = :status, `updated_at` = :updated_at 
+    $obj_update = $this->connection->prepare("UPDATE categories SET `title` = :title, `avatar` = :avatar, `content` = :content, `comment` = :comment 
          WHERE id = $id");
     $arr_update = [
-      ':name' => $this->name,
+      ':name' => $this->title,
       ':avatar' => $this->avatar,
-      ':description' => $this->description,
-      ':status' => $this->status,
-      ':updated_at' => $this->updated_at,
+      ':description' => $this->content,
+      ':status' => $this->comment,
+
     ];
     return $obj_update->execute($arr_update);
   }
@@ -111,7 +111,7 @@ VALUES (:name, :avatar, :description, :status)";
     $obj_delete = $this->connection
       ->prepare("DELETE FROM categories WHERE id = $id");
     $is_delete = $obj_delete->execute();
-    //để đảm bảo toàn vẹn dữ liệu, sau khi xóa category thì cần xóa cả các product nào đang thuộc về category này
+
     $obj_delete_product = $this->connection
       ->prepare("DELETE FROM products WHERE category_id = $id");
     $obj_delete_product->execute();
