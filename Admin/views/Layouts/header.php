@@ -1,11 +1,11 @@
 <?php
-$year = '';
+//$year = '';
 $username = '';
-$avatar = '';
+//$avatar = '';
 if (isset($_SESSION['user'])) {
     $username = $_SESSION['user']['username'];
-    $avatar = $_SESSION['user']['avatar'];
-    $year = date('Y', strtotime($_SESSION['user']['created_at']));
+//    $avatar = $_SESSION['user']['avatar'];
+//    $year = date('Y', strtotime($_SESSION['user']['created_at']));
 }
 ?>
 <header class="main-header">
@@ -17,8 +17,8 @@ if (isset($_SESSION['user'])) {
 
     <nav class="navbar navbar-static-top">
         <div >
-            <a herf="index.php" >
-<!--                <img class="logoweb" src="assets/images/logo.png" >-->
+            <a href="http://localhost/webthuctap/User/index.php?" >
+          <img class="logoweb" src="assets/uploads/logocty.jpg" >
             </a>
         </div>
         <div>
@@ -29,12 +29,12 @@ if (isset($_SESSION['user'])) {
             <ul class="nav navbar-nav">
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="assets/uploads/<?php echo $avatar; ?>" class="user-image" alt="User Image">
+                        <img src="assets/uploads/logocty.jpg" class="user-image" alt="User Image">
                         <span class="hidden-xs"><?php echo $username; ?></span>
                     </a>
                     <ul class="dropdown-menu">
                         <li class="user-header">
-                            <img src="assets/uploads/<?php echo $avatar; ?>" class="img-circle" alt="User Image">
+                            <img src="assets/uploads/logocty.jpg" class="img-circle" alt="User Image">
 
                             <p>
                                 <?php echo $username; ?>
@@ -67,7 +67,7 @@ if (isset($_SESSION['user'])) {
         <div class="user-panel">
 
             <div class="pull-left image">
-                <img src="assets/uploads/<?php echo $avatar; ?>" class="img-circle">
+                <img src="assets/uploads/logocty.jpg" class="img-circle">
             </div>
             <div class="pull-left info">
                 <p><?php echo $username; ?></p>
@@ -79,14 +79,14 @@ if (isset($_SESSION['user'])) {
 
             <li>
                 <a href="index.php?controller=category&action=index" class="b">
-                    <i class="fa fa-th"></i> <span >Quản lý danh mục</span>
+                    <i class="fa fa-th"></i> <span >Quản lý Dịch Vụ</span>
                     <span class="pull-right-container">
             </span>
                 </a>
             </li>
             <li>
                 <a href="index.php?controller=product&action=index" class="b">
-                    <i class="fa fa-code"></i> <span>Quản lý sản phẩm</span>
+                    <i class="fa fa-code"></i> <span>Quản lý Sản Phẩm</span>
                     <span class="pull-right-container">
             </span>
                 </a>
@@ -98,33 +98,34 @@ if (isset($_SESSION['user'])) {
             </span>
                 </a>
             </li>
-            <li>
-                <a href="index.php?controller=product&action=spnb" class="b">
-                    <i class="fa fa-code"></i> <span>Quản lý Sản Phẩm Nổi Bật</span>
-                    <span class="pull-right-container">
-            </span>
-                </a>
-            </li>
+<!--            <li>-->
+<!--                <a href="index.php?controller=product&action=spnb" class="b">-->
+<!--                    <i class="fa fa-code"></i> <span>Quản lý Sản Phẩm Nổi Bật</span>-->
+<!--                    <span class="pull-right-container">-->
+<!--            </span>-->
+<!--                </a>-->
+<!--            </li>-->
             <li>
                 <a href="index.php?controller=assess&action=index" class="b">
                     <i class="fa fa-code"></i> <span>Xem Đánh Giá Khách Hàng</span>
                     <span class="pull-right-container">
             </span>
                 </a>
-            </li> <li>
-                <a href="index.php?controller=order&action=index" class="b">
-                    <i class="fa fa-code"></i> <span>Kiểm Tra Đơn Hàng</span>
-                    <span class="pull-right-container">
-            </span>
-                </a>
-            </li>
-            <li>
-                <a href="index.php?controller=new&action=index" class="b">
-                    <i class="fa fa-code"></i> <span>Quản lý Tin Tức</span>
-                    <span class="pull-right-container">
-            </span>
-                </a>
-            </li>
+          </li>
+<!-- <li>-->
+<!--                <a href="index.php?controller=order&action=index" class="b">-->
+<!--                    <i class="fa fa-code"></i> <span>Kiểm Tra Đơn Hàng</span>-->
+<!--                    <span class="pull-right-container">-->
+<!--            </span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="index.php?controller=new&action=index" class="b">-->
+<!--                    <i class="fa fa-code"></i> <span>Quản lý Tin Tức</span>-->
+<!--                    <span class="pull-right-container">-->
+<!--            </span>-->
+<!--                </a>-->
+<!--            </li>-->
         </ul>
     </section>
     <!-- /.sidebar -->
@@ -219,6 +220,9 @@ if (isset($_SESSION['user'])) {
         margin-left: 934px;
         margin-top: 30px;
         font-size: 24px;
+    }
+    .logoweb{
+        height: 114px;
     }
 </style>
 

@@ -12,6 +12,7 @@ class User extends Model {
     public $phone;
     public $address;
     public $email;
+    public $avatar;
 
 
     public function __construct()
@@ -24,7 +25,7 @@ class User extends Model {
     }
     public function registerUser(){
         $obj_insert = $this->connection
-            ->prepare("INSERT INTO users (username, password, name, phone, address, email, avatar)
+            ->prepare("INSERT INTO admin (username, password, name, phone, address, email, avatar)
 VALUES(:username, :password,:name, :phone, :address, :email, :avatar)");
         $arr_insert = [
             ':username' => $this->username,
@@ -33,8 +34,7 @@ VALUES(:username, :password,:name, :phone, :address, :email, :avatar)");
             ':phone' => $this->phone,
             ':address' => $this->address,
             ':email' => $this->email,
-            ':avatar' => $this->avatar
-
+            ':avatar' => $this->avatar,
         ];
         return $obj_insert->execute($arr_insert);
     }
@@ -58,7 +58,7 @@ VALUES(:username, :password,:name, :phone, :address, :email, :avatar)");
     }
 
     public function getUser($username){
-        $sql_select_one ="select * from users where username=:username ";
+        $sql_select_one ="select * from taikhoanadmin where username=:username ";
         $obj_select_one = $this->connection->prepare($sql_select_one);
         $selects=[
             ':username'=>$username
@@ -68,7 +68,7 @@ VALUES(:username, :password,:name, :phone, :address, :email, :avatar)");
         return $user;
     }
     public function getAdmin($username){
-        $sql_select_one ="select * from users where username=:username AND users.quyenhan = 1";
+        $sql_select_one ="select * from taikhoanadmin where username=:username";
         $obj_select_one = $this->connection->prepare($sql_select_one);
         $selects=[
             ':username'=>$username

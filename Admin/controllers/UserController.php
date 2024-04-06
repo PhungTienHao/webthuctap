@@ -15,7 +15,7 @@ public function register(){
         $address = $_POST['address'];
         $email = $_POST['email'];
         $avatar = $_FILES['avatar'];
-        $quyenhan = $_POST['quyenhan'];
+//        $quyenhan = $_POST['quyenhan'];
 
         if(empty($username)||empty($password)||empty($name)||empty($phone)||empty($address)||empty($email)||empty($repas)){
             $this->error='phải nhập đầy đủ thông tin';
@@ -64,7 +64,7 @@ public function register(){
             $user_model->address = $address;
             $user_model->email = $email;
             $user_model->avatar = $filename;
-            $user_model->quyenhan = $quyenhan;
+//            $user_model->quyenhan = $quyenhan;
 
             $is_register =$user_model ->registerUser();
             var_dump($is_register);
@@ -118,7 +118,7 @@ public function loginAdmin(){
         if(isset($_POST['submit'])){
             $username = $_POST['username'];
             $password = $_POST['password'];
-
+//            password_verify($password,);
             if(empty($this->error)){
                 $user_model = new User();
                 $user =$user_model->getAdmin($username);
@@ -126,7 +126,7 @@ public function loginAdmin(){
                     $this->error='username k tồn tại';}
                 else{
                     $pass_hash=$user['password'];
-                    $is_login=password_verify($password,$pass_hash);
+                    $is_login=$pass_hash;
                     var_dump($is_login);
                     if($is_login){
                         $_SESSION['user']=$user;
