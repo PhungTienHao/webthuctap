@@ -26,8 +26,8 @@ class CategoryController extends Controller
     $count_total = $category_model->countTotal();
     $params['total'] = $count_total;
     $params['page'] = $page;
-    $pagination = new Pagination($params);
-    $pages = $pagination->getPagination();
+//    $pagination = new Pagination($params);
+//    $pages = $pagination->getPagination();
     $categories = $category_model->getAllPagination($params);
 
     $this->content = $this->render('views/categories/index.php', [

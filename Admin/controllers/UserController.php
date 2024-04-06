@@ -244,7 +244,7 @@ public function update(){
                 'page' => $page,
             'query_additional' => $query_additional
         ];
-        $pagination = new Pagination($params);
+//        $pagination = new Pagination($params);
 //        $pages = $pagination->getPagination();
         $users = $user_model->getAllPagination($params);
      $this->content = $this->render('views/users/index.php', [

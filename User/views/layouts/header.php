@@ -17,7 +17,11 @@
     <div class="top">
         <div class="container">
             <div class="header-top row">
-                <p>TECHMU<span></span></p>
+                <div >
+                    <a href="http://localhost/webthuctap/User/index.php?" >
+                        <img class="logoheader" src="assets/images/logo.png" >
+                    </a>
+                </div>
                 <ul>
                     <!--<i class="fas fa-times"></i>-->
                     <li><a href="">Trang chủ</a></li>
@@ -110,6 +114,7 @@
         position: absolute;
         width: 100%;
         z-index: 1;
+        height: auto;
     }
     .header-top{
         justify-content: space-between;
@@ -184,5 +189,8 @@
 
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+    .logoheader{
+        height: 80px;
     }
 </style>

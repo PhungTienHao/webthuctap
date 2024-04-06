@@ -95,8 +95,9 @@ VALUES(:username, :password,:name, :phone, :address, :email, :avatar)");
             $quyenhan = $params['quyenhan'];
             $str_search .= " AND `quyenhan` = $quyenhan";
         }
+//        WHERE TRUE $this->str_search
             $obj_select = $this->connection
-                ->prepare("SELECT COUNT(id) FROM users WHERE TRUE $this->str_search");
+                ->prepare("SELECT COUNT(id) FROM taikhoanadmin ");
             $obj_select->execute();
         $arr_select = [];
         $obj_select->execute($arr_select);
@@ -105,11 +106,12 @@ VALUES(:username, :password,:name, :phone, :address, :email, :avatar)");
 }
     public function getAllPagination($params = [])
     {
+//        WHERE TRUE $this->str_search
         $limit = $params['limit'];
         $page = $params['page'];
         $start = ($page - 1) * $limit;
         $obj_select = $this->connection
-            ->prepare("SELECT * FROM users WHERE TRUE $this->str_search
+            ->prepare("SELECT * FROM taikhoanadmin 
               ORDER BY created_at DESC
               LIMIT $start, $limit");
         $obj_select->execute();
