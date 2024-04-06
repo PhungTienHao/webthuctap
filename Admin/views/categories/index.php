@@ -1,15 +1,15 @@
 
-<h1>Danh sách category</h1>
+<h1>Danh sách Dịch vụ</h1>
 <a href="index.php?controller=category&action=create" class="btn btn-primary">
     <i class="fa fa-plus"></i> Thêm mới
 </a>
 <table class="table table-bordered">
     <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Avatar</th>
-        <th>Description</th>
-        <th>Status</th>
+        <th>STT</th>
+        <th>Tên Dịch Vụ</th>
+        <th>ảnh mô tả</th>
+        <th>giới thiệu ngắn gọn</th>
+        <th>giới thiệu chi tiết</th>
 
         <th></th>
     </tr>
