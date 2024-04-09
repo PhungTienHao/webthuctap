@@ -92,6 +92,13 @@ if (isset($_SESSION['user'])) {
                 </a>
             </li>
             <li>
+                <a href="index.php?controller=education&action=index" class="b">
+                    <i class="fa fa-code"></i> <span>Quản lý chương trình đào tạo</span>
+                    <span class="pull-right-container">
+            </span>
+                </a>
+            </li>
+            <li>
                 <a href="index.php?controller=user&action=index" class="b">
                     <i class="fa fa-user"></i> <span>Quản lý Tài Khoản Admin </span>
                     <span class="pull-right-container">
