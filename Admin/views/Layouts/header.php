@@ -105,6 +105,13 @@ if (isset($_SESSION['user'])) {
             </span>
                 </a>
           </li>
+            <li>
+                <a href="index.php?controller=order&action=index" class="b">
+                    <i class="fa fa-code"></i> <span>Kiểm Tra Đơn Hàng</span>
+                    <span class="pull-right-container">
+            </span>
+                </a>
+            </li>
         </ul>
     </section>
     <!-- /.sidebar -->
