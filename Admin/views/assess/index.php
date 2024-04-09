@@ -3,7 +3,7 @@
 
 <table class="table table-bordered">
     <tr>
-        <th>ID</th>
+        <th>STT</th>
         <th>Name</th>
         <th>Email</th>
         <th>Đánh Giá</th>

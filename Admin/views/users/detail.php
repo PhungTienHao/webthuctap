@@ -1,9 +1,9 @@
 <?php
-require_once "controller/UserController.php";
+
 
 ?>
 
-<h2>Thông tin chi tiết user</h2>
+<h2>Thông tin chi tiết </h2>
 <table class="table table-bordered">
     <tr>
         <th>ID</th>
@@ -14,30 +14,30 @@ require_once "controller/UserController.php";
         <td><?php echo $user['username'] ?></td>
     </tr>
     <tr>
-        <th>name</th>
-        <td><?php echo $user['name'] ?></td>
+        <th>password</th>
+        <td><?php echo $user['password'] ?></td>
     </tr>
 
     <tr>
-        <th>phone</th>
-        <td><?php echo $user['phone'] ?></td>
+        <th>manhanvien</th>
+        <td><?php echo $user['manhanvien'] ?></td>
     </tr>
-    <tr>
-        <th>address</th>
-        <td><?php echo $user['address'] ?></td>
-    </tr>
-    <tr>
-        <th>email</th>
-        <td><?php echo $user['email'] ?></td>
-    </tr>
-    <tr>
-        <th>avatar</th>
-        <td>
-            <?php if (!empty($user['avatar'])): ?>
-                <img height="80" src="assets/uploads/<?php echo $user['avatar'] ?>"/>
-            <?php endif; ?>
-        </td>
-    </tr>
+<!--    <tr>-->
+<!--        <th>address</th>-->
+<!--        <td>--><?php //echo $user['address'] ?><!--</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <th>email</th>-->
+<!--        <td>--><?php //echo $user['email'] ?><!--</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <th>avatar</th>-->
+<!--        <td>-->
+<!--            --><?php //if (!empty($user['avatar'])): ?>
+<!--                <img height="80" src="assets/uploads/--><?php //echo $user['avatar'] ?><!--"/>-->
+<!--            --><?php //endif; ?>
+<!--        </td>-->
+<!--    </tr>-->
 
 
 <!--    <tr>-->

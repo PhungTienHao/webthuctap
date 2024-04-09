@@ -8,11 +8,11 @@ class User extends Model {
     public $id;
     public $username;
     public $password;
-    public $name;
-    public $phone;
-    public $address;
-    public $email;
-    public $avatar;
+    public $manhanvien;
+//    public $phone;
+//    public $address;
+//    public $email;
+//    public $avatar;
 
 
     public function __construct()
@@ -22,6 +22,20 @@ class User extends Model {
             $username = addslashes($_GET['username']);
             $this->str_search .= " AND users.username LIKE '%$username%'";
         }
+    }
+    public function insert()
+    {
+        $obj_insert = $this->connection
+            ->prepare("INSERT INTO taikhoanadmin ( username, password, manhanvien) 
+                                VALUES ( :username, :password, :manhanvien)");
+        $arr_insert = [
+//            ':id' => $this->id,
+            ':username' => $this->username,
+            ':password' => $this->password,
+            ':manhanvien' => $this->manhanvien,
+
+        ];
+        return $obj_insert->execute($arr_insert);
     }
     public function registerUser(){
         $obj_insert = $this->connection
@@ -41,16 +55,15 @@ VALUES(:username, :password,:name, :phone, :address, :email, :avatar)");
     public function update($id)
     {
         $obj_update = $this->connection
-            ->prepare("UPDATE users SET name=:name,  phone=:phone, 
-            address=:address, email=:email, avatar=:avatar
+            ->prepare("UPDATE taikhoanadmin SET username=:username,  password=:password, 
+            manhanvien=:manhanvien
              WHERE id = $id");
         $arr_update = [
 
-            ':name' => $this->name,
-            ':phone' => $this->phone,
-            ':address' => $this->address,
-            ':email' => $this->email,
-            ':avatar' => $this->avatar,
+            ':username' => $this->username,
+            ':password' => $this->password,
+            ':manhanvien' => $this->manhanvien,
+
         ];
         $obj_update->execute($arr_update);
 
@@ -80,7 +93,7 @@ VALUES(:username, :password,:name, :phone, :address, :email, :avatar)");
     public function getById($id)
     {
         $obj_select = $this->connection
-            ->prepare("SELECT * FROM users WHERE id = $id");
+            ->prepare("SELECT * FROM taikhoanadmin WHERE id = $id");
         $obj_select->execute();
         return $obj_select->fetch(PDO::FETCH_ASSOC);
     }

@@ -1,7 +1,7 @@
 <?php ?>
 
 
-<h2>Danh sách user</h2>
+<h2>Danh sách tài khoản admin</h2>
 <a href="index.php?controller=user&action=create" class="btn btn-success">
     <i class="fa fa-plus"></i> Thêm mới
 </a>
@@ -9,11 +9,8 @@
     <tr>
         <th>ID</th>
         <th>Username</th>
-        <th>name</th>
-        <th>phone</th>
-        <th>address</th>
-        <th>email</th>
-        <th>avatar</th>
+        <th>password</th>
+        <th>manhanvien</th>
         <th>created_at</th>
         <th></th>
     </tr>
@@ -23,15 +20,9 @@
                 <td><?php echo $user['id'] ?></td>
                 <td><?php echo $user['username'] ?></td>
 
-                <td><?php echo $user['name'] ?></td>
-                <td><?php echo $user['phone'] ?></td>
-                <td><?php echo $user['address'] ?></td>
-                <td><?php echo $user['email'] ?></td>
-                <td>
-                    <?php if (!empty($user['avatar'])): ?>
-                        <img height="80" src="assets/uploads/<?php echo $user['avatar'] ?>">
-                    <?php endif; ?>
-                </td>
+                <td><?php echo $user['password'] ?></td>
+                <td><?php echo $user['manhanvien'] ?></td>
+
                 <td><?php echo date('d-m-Y H:i:s', strtotime($user['created_at'])) ?></td>
                 <td>
                     <?php

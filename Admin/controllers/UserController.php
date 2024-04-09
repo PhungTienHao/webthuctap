@@ -261,5 +261,39 @@ public function logout(){
     header('location:index.php?controller=user&action=login');
 }
 
+    public function create()
+    {
+        if (isset($_POST['submit'])) {
+//            $id = $_POST['id'];
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            $manhanvien= $_FILES['manhanvien'];
+
+            if (empty($username)||empty($password)||emty($manhanvien)) {
+                $this->error = 'Cần nhập đầy đủ thông tin';
+            }
+            if (empty($this->error)) {
+                $user_model = new user();
+
+                $user_model->title = $username;
+            $user_model->avatar = $password;
+                $user_model->content = $manhanvien;
+
+
+                $is_insert = $user_model->insert();
+                if ($is_insert) {
+                    $_SESSION['success'] = 'Thêm mới thành công';
+                } else {
+                    $_SESSION['error'] = 'Thêm mới thất bại';
+                }
+                header('Location: index.php?controller=user&action=index');
+                exit();
+            }
+
+        }
+        $this->content = $this->render('views/users/create1.php');
+        require_once 'views/layouts/main.php';
+    }
+
 
 }
