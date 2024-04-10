@@ -25,7 +25,7 @@
                 <ul>
                     <!--<i class="fas fa-times"></i>-->
                     <li><a href="">Trang chủ</a></li>
-                    <li><div class="dropdown"> <a href="">Về Chúng Tôi  </a>
+                    <li><div class="dropdown"> <a href="index.php?controller=home&action=aboutus">Về Chúng Tôi  </a>
                             <div class="dropdown-content">
                                 <ul> <li><a title="123" href="#">1222</a></li> </ul>
                                  <ul>   <li><a title="123445" href="#">122345</a></li>
@@ -156,6 +156,7 @@
         font-family: var(--main-text-font);
         color: black;
         black  font-weight: bold;
+        font-size: 17px;
     }
     .header-top ul i{
         font-size: 32px;
@@ -191,6 +192,7 @@
         display: block;
     }
     .logoheader{
-        height: 80px;
+        height: 85px;
+        margin-right: 520px;
     }
 </style>

@@ -20,4 +20,12 @@ class HomeController extends Controller {
     require_once 'views/layouts/main.php';
   }
 
+  public function aboutus(){
+//      $about_model = new About();
+//    $abouts = $about_model->getabout();
+      $this->content = $this->render('views/aboutus/aboutus.php', [
+      ]);
+      require_once 'views/layouts/main.php';
+  }
+
 }

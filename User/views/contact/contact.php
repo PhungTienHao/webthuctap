@@ -50,7 +50,7 @@
                 </div>
                 <div class="load-moree">
                     <button>
-                        Gữi tin nhắn
+                        Gửi tin nhắn
                     </button>
                 </div>
             </form>
