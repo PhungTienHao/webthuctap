@@ -94,7 +94,7 @@ class CategoryController extends Controller
 
     }
 
-    $this->content = $this->render('views/categories/create.php');
+    $this->content = $this->render('views/categories/create1.php');
     require_once 'views/layouts/main.php';
   }
 
@@ -111,9 +111,9 @@ class CategoryController extends Controller
     $category = $category_model->getCategoryById($id);
     //submit form
     if (isset($_POST['submit'])) {
-      $name = $_POST['name'];
-      $description = $_POST['description'];
-      //$status = $_POST['status'];
+      $title = $_POST['title'];
+      $content = $_POST['content'];
+      $comment = $_POST['comment'];
       $avatar_files = $_FILES['avatar'];
 
 
@@ -135,12 +135,10 @@ class CategoryController extends Controller
         }
       }
 
-      //nếu ko có lỗi thì tiến hành lưu dữ liệu và upload ảnh nếu có
       $avatar = $category['avatar'];
       if (empty($this->error)) {
-        //xử lý upload ảnh nếu có
+
         if ($avatar_files['error'] == 0) {
-          //xóa file ảnh cũ đi
 
           $dir_uploads = 'assets/uploads';
           if (!file_exists($dir_uploads)) {
@@ -153,16 +151,15 @@ class CategoryController extends Controller
 
           move_uploaded_file($avatar_files['tmp_name'], $dir_uploads . '/' . $avatar);
         }
-        //lưu vào csdl
-        //gọi model để thực  hiện lưu
+
         $category_model = new Category();
         //gán các giá trị từ form cho các thuộc tính của category
-        $category_model->name = $name;
+        $category_model->title = $title ;
         $category_model->avatar = $avatar;
-        $category_model->description = $description;
-        //$category_model->status = $status;
-        $category_model->updated_at = date('Y-m-d H:i:s');
-        //gọi phương thức update theo id
+        $category_model->content = $content;
+        $category_model->comment = $comment;
+//        $category_model->updated_at = date('Y-m-d H:i:s');
+
         $is_update = $category_model->update($id);
         if ($is_update) {
           $_SESSION['success'] = 'Update thành công';

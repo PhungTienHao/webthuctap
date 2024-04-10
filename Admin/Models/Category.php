@@ -94,8 +94,8 @@ VALUES (:name, :avatar, :content, :comment)";
     $arr_update = [
       ':name' => $this->title,
       ':avatar' => $this->avatar,
-      ':description' => $this->content,
-      ':status' => $this->comment,
+      ':content' => $this->content,
+      ':comment' => $this->comment,
 
     ];
     return $obj_update->execute($arr_update);

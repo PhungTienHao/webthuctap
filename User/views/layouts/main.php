@@ -48,9 +48,14 @@
 <!--    <button>Tìm Hiểu Thêm</button>-->
 <!--</div>-->
 <!--</div>-->
-</div>
+<div>
 <?php echo $this->content; ?>
 </div>
+<div>
+    <?php echo $this->content = $this->render('views/contact/contact.php', [
+    ]); ?>
+</div>
+
 <?php require_once 'footer.php'; ?>
 
 </body>

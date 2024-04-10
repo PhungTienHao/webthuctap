@@ -6,7 +6,7 @@
         <div class="form-group">
             <label>Tên danh mục</label>
             <input type="text" name="name"
-                   value="<?php echo isset($_POST['name']) ? $_POST['name'] : $category['name']; ?>"
+                   value="<?php echo isset($_POST['title']) ? $_POST['title'] : $category['title']; ?>"
                    class="form-control"/>
         </div>
 
@@ -20,32 +20,19 @@
         <?php endif; ?>
 
         <div class="form-group">
-            <label>Mô tả</label>
+            <label>Mô tả ngắn gọn</label>
             <textarea class="form-control"
-                      name="description"><?php echo isset($_POST['description']) ? $_POST['description'] : $category['description']; ?></textarea>
+                      name="content"><?php echo isset($_POST['content']) ? $_POST['content'] : $category['content']; ?></textarea>
+        </div>
+        <div class="form-group">
+            <label>Mô tả chi tiết</label>
+            <textarea class="form-control"
+                      name="comment"><?php echo isset($_POST['comment']) ? $_POST['comment'] : $category['comment']; ?></textarea>
         </div>
 
-        <div class="form-group">
-            <?php
-            $selected_active = '';
-            $selected_disabled = '';
-            if (isset($_POST['status'])) {
-                switch ($_POST['status']) {
-                    case 0:
-                      $selected_disabled = 'selected';
-                        break;
-                    case 1:
-                      $selected_active = 'selected';
-                        break;
-                }
-            }
-            ?>
-            <label>Trạng thái</label>
-            <select name="status" class="form-control">
-                <option value="0" <?php echo $selected_active ?> >Disabled</option>
-                <option value="1" <?php echo $selected_disabled ?> >Active</option>
-            </select>
-        </div>
+
+
+
 
         <input type="submit" class="btn btn-primary" name="submit" value="Save"/>
         <input type="reset" class="btn btn-secondary" name="submit" value="Reset"/>

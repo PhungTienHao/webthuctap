@@ -118,7 +118,7 @@ class ProductController extends Controller
     $category_model = new Category();
     $categories = $category_model->getAll();
 
-    $this->content = $this->render('views/products/create.php', [
+    $this->content = $this->render('views/products/create1.php', [
         'categories' => $categories
     ]);
     require_once 'views/layouts/main.php';
