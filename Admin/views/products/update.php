@@ -40,12 +40,6 @@
                class="form-control" id="price"/>
     </div>
     <div class="form-group">
-        <label for="amount">Số lượng</label>
-        <input type="number" name="amount"
-               value="<?php echo isset($_POST['amount']) ? $_POST['amount'] : $product['amount'] ?>"
-               class="form-control" id="amount"/>
-    </div>
-    <div class="form-group">
         <label for="summary">Mô tả ngắn sản phẩm</label>
         <textarea name="summary" id="summary"
                   class="form-control"><?php echo isset($_POST['summary']) ? $_POST['summary'] : $product['summary'] ?></textarea>
@@ -54,71 +48,6 @@
         <label for="description">Mô tả chi tiết sản phẩm</label>
         <textarea name="content" id="description"
                   class="form-control"><?php echo isset($_POST['content']) ? $_POST['content'] : $product['content'] ?></textarea>
-    </div>
-
-    <div class="form-group">
-        <label for="seo-title">Seo title</label>
-        <input type="text" name="seo_title" value="<?php echo isset($_POST['seo_title']) ? $_POST['seo_title'] : $product['seo_title'] ?>"
-               class="form-control" id="seo-title"/>
-    </div>
-    <div class="form-group">
-        <label for="seo-description">Seo description</label>
-        <input type="text" name="seo_description" value="<?php echo isset($_POST['seo_description']) ? $_POST['seo_description'] : $product['seo_description'] ?>"
-               class="form-control" id="seo-description"/>
-    </div>
-
-    <div class="form-group">
-        <label for="seo-keywords">Seo keywords</label>
-        <input type="text" name="seo_keywords" value="<?php echo isset($_POST['seo_keywords']) ? $_POST['seo_keywords'] : $product['seo_keywords'] ?>"
-               class="form-control" id="seo-keywords"/>
-    </div>
-
-    <div class="form-group">
-        <label for="status">Trạng thái</label>
-        <select name="status" class="form-control" id="status">
-          <?php
-          $selected_disabled = '';
-          $selected_active = '';
-          if ($product['status'] == 0) {
-            $selected_disabled = 'selected';
-          } else {
-            $selected_active = 'selected';
-          }
-          if (isset($_POST['status'])) {
-            switch ($_POST['status']) {
-              case 0:
-                $selected_disabled = 'selected';
-                break;
-              case 1:
-                $selected_active = 'selected';
-                break;
-            }
-          }
-          ?>
-            <option value="0" <?php echo $selected_disabled; ?>>Disabled</option>
-            <option value="1" <?php echo $selected_active ?>>Active</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="is_feature">Kiểu Sản Phẩm</label>
-        <select name="is_feature" class="form-control" id="is_feature">
-            <?php
-            $selected_spbt = '';
-            $selected_spnb = '';
-            if (isset($_POST['is_feature'])) {
-                switch ($_POST['is_feature']) {
-                    case 0:
-                        $selected_spnb = 'selected';
-                        break;
-                    case 1:
-                        $selected_spbt = 'selected';
-                        break;
-                }
-            }
-            ?>
-            <option value="0" <?php echo $selected_spnb; ?>>spbt</option>
-            <option value="1" <?php echo $selected_spbt ?>>spnb</option>
-        </select>
     </div>
     <div class="form-group">
         <input type="submit" name="submit" value="Save" class="btn btn-primary"/>

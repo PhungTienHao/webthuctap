@@ -102,21 +102,16 @@ public $is_feature;
     public function insert()
     {
         $obj_insert = $this->connection
-            ->prepare("INSERT INTO products(category_id, title, avatar, price, amount, summary, content, seo_title, seo_description, seo_keywords, status,is_feature) 
-                                VALUES (:category_id, :title, :avatar, :price, :amount, :summary, :content, :seo_title, :seo_description, :seo_keywords, :status, :is_feature)");
+            ->prepare("INSERT INTO products(category_id, title, avatar, price,  summary, content) 
+                                VALUES (:category_id, :title, :avatar, :price,  :summary, :content)");
         $arr_insert = [
             ':category_id' => $this->category_id,
             ':title' => $this->title,
             ':avatar' => $this->avatar,
             ':price' => $this->price,
-            ':amount' => $this->amount,
             ':summary' => $this->summary,
             ':content' => $this->content,
-            ':seo_title' => $this->seo_title,
-            ':seo_description' => $this->seo_description,
-            ':seo_keywords' => $this->seo_keywords,
-            ':status' => $this->status,
-            ':is_feature'=>$this->is_feature,
+
         ];
         return $obj_insert->execute($arr_insert);
     }
@@ -136,23 +131,17 @@ public $is_feature;
     public function update($id)
     {
         $obj_update = $this->connection
-            ->prepare("UPDATE products SET category_id=:category_id, title=:title, avatar=:avatar, price=:price,amount=:amount,
-            summary=:summary, content=:content, seo_title=:seo_title, seo_description=:seo_description, seo_keywords=:seo_keywords, status=:status, updated_at=:updated_at,is_feature=:is_feature WHERE id = $id
+            ->prepare("UPDATE products SET category_id=:category_id, title=:title, avatar=:avatar, price=:price,
+            summary=:summary, content=:content WHERE id = $id
 ");
         $arr_update = [
             ':category_id' => $this->category_id,
             ':title' => $this->title,
             ':avatar' => $this->avatar,
             ':price' => $this->price,
-            ':amount' => $this->amount,
             ':summary' => $this->summary,
             ':content' => $this->content,
-            ':seo_title' => $this->seo_title,
-            ':seo_description' => $this->seo_description,
-            ':seo_keywords' => $this->seo_keywords,
-            ':status' => $this->status,
-            ':updated_at' => $this->updated_at,
-            ':is_feature'=>$this->is_feature,
+
         ];
         return $obj_update->execute($arr_update);
     }
@@ -163,15 +152,15 @@ public $is_feature;
             ->prepare("DELETE FROM products WHERE id = $id");
         return $obj_delete->execute();
     }
-    public function change($id)
-    {
-        $obj_delete = $this->connection
-            ->prepare("UPDATE products set is_feature = 0 where id=$id");
-        return $obj_delete->execute();
-    }
-    public function changespnb($id){
-        $obj_delete = $this->connection
-            ->prepare("UPDATE products set is_feature = 1 where id=$id");
-        return $obj_delete->execute();
-    }
+//    public function change($id)
+//    {
+//        $obj_delete = $this->connection
+//            ->prepare("UPDATE products set is_feature = 0 where id=$id");
+//        return $obj_delete->execute();
+//    }
+//    public function changespnb($id){
+//        $obj_delete = $this->connection
+//            ->prepare("UPDATE products set is_feature = 1 where id=$id");
+//        return $obj_delete->execute();
+//    }
 }

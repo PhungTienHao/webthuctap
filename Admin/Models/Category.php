@@ -1,6 +1,6 @@
 <?php
-//models/Category
 require_once 'models/Model.php';
+require_once 'controllers/CategoryController.php';
 class Category extends Model {
 
   public $id;
@@ -9,13 +9,12 @@ class Category extends Model {
   public $content;
   public $comment;
   public $created_at;
-  public $updated_at;
 
 
   public function insert() {
     $sql_insert =
-      "INSERT INTO categories(`name`, `avatar`, `content`, `comment`)
-VALUES (:name, :avatar, :content, :comment)";
+      "INSERT INTO categories(`title`, `avatar`, `content`, `comment`)
+VALUES (:title, :avatar, :content, :comment)";
 
     $obj_insert = $this->connection
       ->prepare($sql_insert);
@@ -92,7 +91,7 @@ VALUES (:name, :avatar, :content, :comment)";
     $obj_update = $this->connection->prepare("UPDATE categories SET `title` = :title, `avatar` = :avatar, `content` = :content, `comment` = :comment 
          WHERE id = $id");
     $arr_update = [
-      ':name' => $this->title,
+      ':title' => $this->title,
       ':avatar' => $this->avatar,
       ':content' => $this->content,
       ':comment' => $this->comment,

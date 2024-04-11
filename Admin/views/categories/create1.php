@@ -2,7 +2,7 @@
 <form method="post" action="" enctype="multipart/form-data">
     <div class="form-group">
         <label style="color: black">Tên dịch vụ</label>
-        <input type="text" name="name" value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''; ?>"
+        <input type="text" name="title" value="<?php echo isset($_POST['title']) ? $_POST['title'] : ''; ?>"
                class="form-control"/>
     </div>
     <div class="form-group">

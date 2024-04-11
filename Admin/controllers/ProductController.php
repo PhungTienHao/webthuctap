@@ -48,14 +48,9 @@ class ProductController extends Controller
       $category_id = $_POST['category_id'];
       $title = $_POST['title'];
       $price = $_POST['price'];
-      $amount = $_POST['amount'];
       $summary = $_POST['summary'];
       $content = $_POST['content'];
-      $seo_title = $_POST['seo_title'];
-      $seo_description = $_POST['seo_description'];
-      $seo_keywords = $_POST['seo_keywords'];
-      $status = $_POST['status'];
-      $is_feature =$_POST['is_feature'];
+
 
       if (empty($title)) {
         $this->error = 'Không được để trống title';
@@ -94,14 +89,8 @@ class ProductController extends Controller
         $product_model->title = $title;
         $product_model->avatar = $filename;
         $product_model->price = $price;
-        $product_model->amount = $amount;
         $product_model->summary = $summary;
         $product_model->content = $content;
-        $product_model->seo_title = $seo_title;
-        $product_model->seo_description = $seo_description;
-        $product_model->seo_keywords = $seo_keywords;
-        $product_model->status = $status;
-        $product_model->is_feature = $is_feature;
 
         $is_insert = $product_model->insert();
         if ($is_insert) {
@@ -153,20 +142,14 @@ class ProductController extends Controller
     $id = $_GET['id'];
     $product_model = new Product();
     $product = $product_model->getById($id);
-    //xử lý submit form
+
     if (isset($_POST['submit'])) {
       $category_id = $_POST['category_id'];
       $title = $_POST['title'];
       $price = $_POST['price'];
-      $amount = $_POST['amount'];
       $summary = $_POST['summary'];
       $content = $_POST['content'];
-      $seo_title = $_POST['seo_title'];
-      $seo_description= $_POST['seo_description'];
-      $seo_keywords = $_POST['seo_keywords'];
-      $status = $_POST['status'];
-      $is_feature =$_POST['is_feature'];
-//        $product_model->is_feature = $is_feature;
+
       //xử lý validate
       if (empty($title)) {
         $this->error = 'Không được để trống title';
@@ -186,8 +169,6 @@ class ProductController extends Controller
           $this->error = 'File upload không được quá 2MB';
         }
       }
-
-      //nếu ko có lỗi thì tiến hành save dữ liệu
       if (empty($this->error)) {
         $filename = $product['avatar'];
         //xử lý upload file nếu có
@@ -207,15 +188,9 @@ class ProductController extends Controller
         $product_model->title = $title;
         $product_model->avatar = $filename;
         $product_model->price = $price;
-        $product_model->amount = $amount;
         $product_model->summary = $summary;
         $product_model->content = $content;
-        $product_model->seo_title = $seo_title;
-        $product_model->seo_description = $seo_description;
-        $product_model->seo_keywords = $seo_keywords;
-        $product_model->status = $status;
-          $product_model->is_feature = $is_feature;
-        $product_model->updated_at = date('Y-m-d H:i:s');
+
 
         $is_update = $product_model->update($id);
         if ($is_update) {
@@ -258,56 +233,56 @@ class ProductController extends Controller
     header('Location: index.php?controller=product');
     exit();
   }
-    public function change()
-    {
-        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-            $_SESSION['error'] = 'ID không hợp lệ';
-            header('Location: index.php?controller=product');
-            exit();
-        }
-
-        $id = $_GET['id'];
-        $product_model = new Product();
-        $is_delete = $product_model->change($id);
-        if ($is_delete) {
-            $_SESSION['success'] = 'Xóa dữ liệu thành công';
-        } else {
-            $_SESSION['error'] = 'Xóa dữ liệu thất bại';
-        }
-        header('Location: index.php?controller=product');
-        exit();
-    }
-    public function spnb()
-    {
-        $product_model = new Product();
-        $products = $product_model->getspnb();
-
-        $category_model = new Category();
-        $categories = $category_model->getAll();
-
-        $this->content = $this->render('views/products/spnb.php', [
-            'products' => $products,
-            'categories' => $categories,
-        ]);
-        require_once 'views/layouts/main.php';
-    }
-    public function changespnb()
-    {
-        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-            $_SESSION['error'] = 'ID không hợp lệ';
-            header('Location: index.php?controller=product');
-            exit();
-        }
-
-        $id = $_GET['id'];
-        $product_model = new Product();
-        $is_delete = $product_model->changespnb($id);
-        if ($is_delete) {
-            $_SESSION['success'] = 'Thay đổi sản phẩm thành sản phẩm nổi bật thành công';
-        } else {
-            $_SESSION['error'] = 'Thay đổi thất bại';
-        }
-        header('Location: index.php?controller=product');
-        exit();
-    }
+//    public function change()
+//    {
+//        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+//            $_SESSION['error'] = 'ID không hợp lệ';
+//            header('Location: index.php?controller=product');
+//            exit();
+//        }
+//
+//        $id = $_GET['id'];
+//        $product_model = new Product();
+//        $is_delete = $product_model->change($id);
+//        if ($is_delete) {
+//            $_SESSION['success'] = 'Xóa dữ liệu thành công';
+//        } else {
+//            $_SESSION['error'] = 'Xóa dữ liệu thất bại';
+//        }
+//        header('Location: index.php?controller=product');
+//        exit();
+//    }
+//    public function spnb()
+//    {
+//        $product_model = new Product();
+//        $products = $product_model->getspnb();
+//
+//        $category_model = new Category();
+//        $categories = $category_model->getAll();
+//
+//        $this->content = $this->render('views/products/spnb.php', [
+//            'products' => $products,
+//            'categories' => $categories,
+//        ]);
+//        require_once 'views/layouts/main.php';
+//    }
+//    public function changespnb()
+//    {
+//        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+//            $_SESSION['error'] = 'ID không hợp lệ';
+//            header('Location: index.php?controller=product');
+//            exit();
+//        }
+//
+//        $id = $_GET['id'];
+//        $product_model = new Product();
+//        $is_delete = $product_model->changespnb($id);
+//        if ($is_delete) {
+//            $_SESSION['success'] = 'Thay đổi sản phẩm thành sản phẩm nổi bật thành công';
+//        } else {
+//            $_SESSION['error'] = 'Thay đổi thất bại';
+//        }
+//        header('Location: index.php?controller=product');
+//        exit();
+//    }
 }

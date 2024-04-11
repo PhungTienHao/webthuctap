@@ -8,7 +8,7 @@
     </tr>
     <tr>
         <th>Name</th>
-        <td><?php echo $category['name']; ?></td>
+        <td><?php echo $category['title']; ?></td>
     </tr>
     <tr>
         <th>Avatar</th>
@@ -20,32 +20,20 @@
     </tr>
     <tr>
         <th>Description</th>
-        <td><?php echo $category['description']; ?></td>
+        <td><?php echo $category['content']; ?></td>
     </tr>
     <tr>
-        <th>Status</th>
-        <td>
-            <?php
-            $status_text = 'Active';
-            if ($category['status'] == 0) {
-                $status_text = 'Disabled';
-            }
-            echo $status_text;
-            ?>
-        </td>
+        <th>Description</th>
+        <td><?php echo $category['comment']; ?></td>
     </tr>
+
     <tr>
         <th>Created_at</th>
         <td>
             <?php echo date('d-m-Y H:i:s', strtotime($category['created_at'])); ?>
         </td>
     </tr>
-    <tr>
-        <th>Updated_at</th>
-        <td>
-            <?php echo date('d-m-Y H:i:s', strtotime($category['updated_at'])); ?>
-        </td>
-    </tr>
+
 </table>
 <a class="btn btn-primary" href="index.php?controller=category">Back</a>
 

@@ -10,7 +10,7 @@
                 }
                 ?>
                 <option value="<?php echo $category['id'] ?>" <?php echo $selected; ?>>
-                    <?php echo $category['name'] ?>
+                    <?php echo $category['title'] ?>
                 </option>
             <?php endforeach; ?>
         </select>
@@ -36,7 +36,11 @@
         <textarea name="content" id="description"
                   class="form-control"><?php echo isset($_POST['content']) ? $_POST['content'] : '' ?></textarea>
     </div>
-
+    <div class="form-group">
+        <label for="price">Giá dịch vụ</label>
+        <textarea name="price" id="price"
+                  class="form-control"><?php echo isset($_POST['price']) ? $_POST['price'] : '' ?></textarea>
+    </div>
 
     <div class="form-group">
         <input type="submit" name="submit" value="Save" class="btn btn-primary"/>

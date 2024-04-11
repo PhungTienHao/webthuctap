@@ -10,15 +10,13 @@
     <tr>
 <!--        <th>ID</th>-->
         <th>Category name</th>
-        <th>Title</th>
-        <th>Avatar</th>
-        <th>Price</th>
-        <th>Amount</th>
-        <th>Status</th>
+        <th>Tên dịch vụ</th>
+        <th>ảnh mô tả</th>
+        <th>Mô tả Ngăn</th>
+        <th>Mô tả chi tiết</th>
+        <th>Gía dịch vụ</th>
         <th>Created_at</th>
-        <th>Updated_at</th>
         <th></th>
-        <th>Chọn spnb</th>
     </tr>
     <?php if (!empty($products)): ?>
         <?php foreach ($products as $product): ?>
@@ -31,12 +29,11 @@
                         <img height="80" src="assets/uploads/<?php echo $product['avatar'] ?>"/>
                     <?php endif; ?>
                 </td>
-                <td><?php echo number_format($product['price']) ?></td>
-                <td><?php echo $product['amount'] ?></td>
-                <td><?php echo Helper::getStatusText($product['status']) ?></td>
 
+                <td><?php echo $product['summary'] ?></td>
+                <td><?php echo $product['content'] ?></td>
+                <td><?php echo number_format($product['price']) ?></td>
                 <td><?php echo date('d-m-Y H:i:s', strtotime($product['created_at'])) ?></td>
-                <td><?php echo !empty($product['updated_at']) ? date('d-m-Y H:i:s', strtotime($product['updated_at'])) : '--' ?></td>
                 <td>
                     <?php
                     $url_detail = "index.php?controller=product&action=detail&id=" . $product['id'];
@@ -47,13 +44,6 @@
                     <a title="Update" href="<?php echo $url_update ?>"><i class="fa fa-pencil-alt"></i></a> &nbsp;&nbsp;
                     <a title="Xóa" href="<?php echo $url_delete ?>" onclick="return confirm('Are you sure delete?')"><i
                                 class="fa fa-trash"></i></a>
-                </td>
-                <td>
-                    <?php
-                    $url_change = "index.php?controller=product&action=changespnb&id=" . $product['id'];
-                    ?>
-                    <a title="Chọn spnb" href="<?php echo $url_change ?>"><i class="fa fa-upload"></i></a>
-
                 </td>
             </tr>
         <?php endforeach; ?>
