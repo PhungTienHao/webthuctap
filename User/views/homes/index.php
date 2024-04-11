@@ -43,24 +43,20 @@
     <!-- Ideabox responsive css file -->
     <link rel="stylesheet" href="assets/css/responsive-style.css"/>
     <!-- Ideabox main theme css file. you have to add all pages -->
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"asp-append-version="true"/>
 
 </head>
 <body>
 <div class="main">
 <div class="anhhd">
     <div class="header-text">
-        <h1>TECHMU VIỆT NAM</h1>
-        <p>CÔNG TY TNHH ĐÀO TẠO VÀ CHUYỂN GIAO CÔNG NGHỆ SỐ VIỆT NAM</p>
-        <button>Tìm Hiểu Thêm</button>
+        <h1 class="l1">TECHMU VIỆT NAM</h1>
+        <p class="l1">CÔNG TY TNHH ĐÀO TẠO VÀ CHUYỂN GIAO CÔNG NGHỆ SỐ VIỆT NAM</p>
+        <button class="l1">Tìm Hiểu Thêm</button>
     </div>
 </div>
 </div>
-
-
-
 </body>
-
 </html>
 <style>
     .anhhd{
@@ -80,12 +76,13 @@
         max-width: 700px;
         min-width: 500px;
         text-align: center;
-        color: black;
-
+        color:black;
+        font-size: x-large;
+    }
+    .l1{
+    color:black;
     }
 </style>
-<style>
 
-</style>
 
 
