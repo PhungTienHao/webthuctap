@@ -27,8 +27,8 @@
                     <li><a href="">Trang chủ</a></li>
                     <li><div class="dropdown"> <a href="index.php?controller=home&action=aboutus">Về Chúng Tôi  </a>
                             <div class="dropdown-content">
-                                <ul> <li><a title="123" href="#">1222</a></li> </ul>
-                                 <ul>   <li><a title="123445" href="#">122345</a></li>
+                                <ul> <li><a title="Giới Thiệu" href="index.php?controller=home&action=aboutus">Giới Thiệu</a></li> </ul>
+                                 <ul>   <li><a title="Sơ đồ tổ chức" href="#">Sơđồtổchức</a></li>
                                 </ul>
                             </div>
                         </div>

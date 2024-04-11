@@ -79,8 +79,33 @@
         color:black;
         font-size: x-large;
     }
-    .l1{
-    color:black;
+    /*.l1{*/
+    /*color:black;*/
+    /*}*/
+    .header-text h1{
+        font-family: var(--main-text-font);
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 32px;
+        color:black;
+
+    }
+    .header-text p{
+        font-family: var(--main-text-font);
+        color:black;
+
+
+    }
+    .header-text button{
+        width: 150px;
+        height: 40px;
+        margin-top: 20px;
+        background-color: transparent;
+        border: 2px solid var(--main-color);
+        color:black;
+        cursor: pointer;
+        font-size: 20px;
+        transition: all 0.5s ease;
     }
 </style>
 
