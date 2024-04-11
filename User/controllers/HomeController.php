@@ -71,5 +71,10 @@ class HomeController extends Controller {
         ]);
         require_once 'views/layouts/main.php';
     }
+    public function strategy(){
+        $this->content = $this->render('views/strategy/strategy.php', [
+        ]);
+        require_once 'views/layouts/main.php';
+    }
 
 }

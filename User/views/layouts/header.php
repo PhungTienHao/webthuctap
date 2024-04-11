@@ -34,7 +34,7 @@
                         </div>
 
                     </li>
-                    <li><a href="">Chiến lược</a></li>
+                    <li><a href="index.php?controller=home&action=strategy">Chiến lược</a></li>
                     <li><a href="">Hoạt động</a></li>
                     <li><div class="dropdown"> <a href="">Dịch vụ</a>
                             <div class="dropdown-content">
@@ -156,7 +156,7 @@
         font-family: var(--main-text-font);
         color: black;
         black  font-weight: bold;
-        font-size: 17px;
+        font-size: 19px;
     }
     .header-top ul i{
         font-size: 32px;
