@@ -50,9 +50,9 @@
 <div class="main">
 <div class="anhhd">
     <div class="header-text">
-        <h1 class="l1">TECHMU VIỆT NAM</h1>
+        <h1 class="l1">TRANING AND DIGITAL TECHNOLOGY</h1>
         <p class="l1">CÔNG TY TNHH ĐÀO TẠO VÀ CHUYỂN GIAO CÔNG NGHỆ SỐ VIỆT NAM</p>
-        <button class="l1">Tìm Hiểu Thêm</button>
+        <button class="l1"><a href="index.php?controller=home&action=aboutus"> Tìm Hiểu Thêm</a></button>
     </div>
 </div>
 </div>

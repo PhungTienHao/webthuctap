@@ -14,7 +14,7 @@
 <body>
 <!---------------------header------------------>
 <!--<header>-->
-    <div class="top">
+    <div class="top1">
         <div class="container">
             <div class="header-top row">
                 <div >
@@ -73,12 +73,12 @@
 
     }
 
-.top{
+.top1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 10vh;
+    height: 130px;
     position: relative;
     /*background-color: seashell;*/
     /*background-image: url(assets/images/bg.jpg);*/
@@ -106,7 +106,7 @@
     /*    opacity: 0.6;*/
     /*    background-color: seashell;*/
     /*}*/
-    .top{
+    .top1{
         position: absolute;
         width: 100%;
         z-index: 1;

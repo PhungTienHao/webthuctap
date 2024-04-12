@@ -23,7 +23,7 @@
         </div>
         <div class="content-contact">
             <form>
-                <div class="row">
+                <div class="row12">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <i class="fas fa-user">
                             Họ và Tên</i>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        <p>Ghi Nội Dung</p>
+                        <b>Ghi Nội Dung</b>
                         <textarea cols="20" rows="10" name="comment" placeholder="Your Message*"></textarea>
 
                     </div>
@@ -65,7 +65,14 @@
     .icon{
 
     }
-
+    .row12{
+        display: flex;
+    }
+    .col-12.col-sm-12.col-md-12.col-lg-12 {
+        text-align: center;
+        width: 950px;
+        margin-top: 21px;
+    }
     .main-contact {
         background: #daece8;
         padding: 80px 0;
@@ -73,6 +80,8 @@
         background-repeat:no-repeat;
         background-origin:border-box;
         background-size:cover;
+        font-size: large;
+        height: 949px;
     }
     .content-contact input, textarea {
         width: 100%;
@@ -82,14 +91,14 @@
     }
 
     .title-contact h2 {
-        color:black;
+        color:white;
         text-align: center;
     }
     .title-contact .title-line {
 
     }
     .title-contact p {
-        color: black;
+        color: white;
         text-align: center;
     }
     .content-contact {

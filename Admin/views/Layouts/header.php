@@ -86,7 +86,7 @@ if (isset($_SESSION['user'])) {
             </li>
             <li>
                 <a href="index.php?controller=product&action=index" class="b">
-                    <i class="fa fa-code"></i> <span>Quản lý Sản Phẩm</span>
+                    <i class="fa fa-code"></i> <span>Quản lý dịch vụ chi tiết</span>
                     <span class="pull-right-container">
             </span>
                 </a>

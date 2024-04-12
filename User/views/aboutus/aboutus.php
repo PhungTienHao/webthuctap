@@ -23,7 +23,9 @@
         <div class="containerx">
             <div class="title_home center">
                 <h2 class="titlee"><span style="font-weight: 700;"><u>VỀ CHÚNG TÔI</u></span></h2>
-
+            </div>
+            <div>
+<h4 class="titlee2"><span><u>Công ty TNHH Đào Tạo Và Chuyển Giao Công Nghệ Số Việt Nam</u></span></h4>
             </div>
         </div>
     </div>
@@ -102,6 +104,10 @@
 <style>
     .titlee {
         font-size: 50px;
+    }
+    h4.titlee2 {
+        text-align: center;
+        font-size: xx-large;
     }
     .title_home .divider {
         margin: 20px 0;
