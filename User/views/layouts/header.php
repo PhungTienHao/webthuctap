@@ -47,7 +47,10 @@
                             </div>
                         </div>
                     </li>
+                    <li><a href="#">Đào Tạo</a> </li>
+                    <li><a href="#">Thanh Toán</a> </li>
                 </ul>
+
                 <!--<i class="fas fa-bars"></i>-->
             </div>
         </div>
@@ -104,7 +107,7 @@
     /*    background-color: seashell;*/
     /*}*/
     .top{
-        position: relative;
+        position: absolute;
         width: 100%;
         z-index: 1;
         height: auto;
@@ -123,11 +126,12 @@
     }
     .header-top ul{
         display: flex;
-        margin: auto;
+        margin: inherit;
     }
     .header-top ul li{
         margin-left: 12px;
         position: relative;
+
 
     }
     .header-top ul li::after{
@@ -148,7 +152,7 @@
     }
     .header-top ul li a{
         font-family: var(--main-text-font);
-        color: black;
+        color: white;
         black  font-weight: bold;
         font-size: 19px;
     }
@@ -173,7 +177,7 @@
 
     .dropdown-content {
         display: none;
-        position: absolute;
+        position: fixed;
         background-color:black;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -188,5 +192,8 @@
     .logoheader{
         height: 85px;
         margin-right: 520px;
+    }
+    .row{
+        width: max-content;
     }
 </style>
