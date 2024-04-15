@@ -1,7 +1,7 @@
 <?php
 require_once 'models/Model.php';
-require_once 'controllers/AssessController.php';
-
+//require_once 'controllers/AssessController.php';
+require_once 'controllers/HomeController.php';
 class Assess extends Model
 {
 
@@ -27,15 +27,6 @@ class Assess extends Model
         ];
         return $obj_insert->execute($arr_insert);
     }
-//    public function getAll()
-//    {
-//        $obj_select = $this->connection
-//            ->prepare("SELECT * FROM assess
-//              ORDER BY created_at DESC");
-//        $obj_select->execute();
-//        $assess = $obj_select->fetchAll(PDO::FETCH_ASSOC);
-//        return $assess;
-//    }
 
 
 }

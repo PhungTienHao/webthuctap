@@ -1,6 +1,6 @@
 <?php
 require_once 'controllers/Controller.php';
-require_once 'controllers/AssessController.php';
+//require_once 'controllers/AssessController.php';
 require_once 'models/Assess.php';
 
 class HomeController extends Controller {
@@ -29,7 +29,6 @@ class HomeController extends Controller {
   }
     public function createas(){
         if (isset($_POST['submit'])) {
-
             $email = htmlspecialchars($_POST['email']);
             $phone = htmlspecialchars($_POST['phone']);
             $name = htmlspecialchars($_POST['name']);

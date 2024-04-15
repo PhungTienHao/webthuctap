@@ -35,7 +35,7 @@
 
                     </li>
                     <li><a href="index.php?controller=home&action=strategy">Chiến lược</a></li>
-                    <li><a href="">Hoạt động</a></li>
+
                     <li><div class="dropdown"> <a href="">Dịch vụ</a>
                             <div class="dropdown-content">
                                 <ul> <li><a title="" href="#">Quảng cáo và truyền thông</a></li> </ul>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Liên hệ</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,36 +22,36 @@
             </p>
         </div>
         <div class="content-contact">
-            <form>
+            <form action="" method="post" enctype="multipart/form-data">
                 <div class="row12">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <i class="fas fa-user">
                             Họ và Tên</i>
-                        <input type="text" name="name" placeholder="Your Name*"><br><br>
+                        <input type="text" name="name" id="name" placeholder="Your Name*"><br><br>
                         <i class="fas fa-phone">
                             Số Điện Thoại</i>
-                        <input type="text" name="phone" placeholder="phone number*">
+                        <input type="text" name="phone" id="phone"placeholder="phone number*">
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <i class="fas fa-envelope">
                             Địa chỉ Email</i>
-                        <input type="text" name="email" placeholder="Your Email*"><br><br>
+                        <input type="email" name="email" id="email" placeholder="Your Email*"><br><br>
                         <i class="fas fa-user">
                             Chủ Đề</i>
-                        <input type="text" name="subject" placeholder="Chủ Đề*">
+                        <input type="text" id="subject" name="subject" placeholder="Chủ Đề*">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <b>Ghi Nội Dung</b>
-                        <textarea cols="20" rows="10" name="comment" placeholder="Your Message*"></textarea>
+                        <textarea cols="20" rows="10" name="comment" id="comment" placeholder="Your Message*"></textarea>
 
                     </div>
                 </div>
-                <div class="load-moree">
-                    <button>
-                        Gửi tin nhắn
-                    </button>
+                <div class="">
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="submit" value="Gửi Tin Nhắn" class="btn btn-primary"/>
+                    </div>
                 </div>
             </form>
         </div>
