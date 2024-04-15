@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Webthuctap</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="script.js"></script>
-</head>
-<body>
+
 <footer id="footer">
     <div class="footer_main">
         <div class="container ">
@@ -83,8 +71,56 @@
     </div>
 
 </footer>
-</body>
-</html>
+<div class="overlay"></div>
+
+<ul class="icon-service-wrap">
+    <li data-toggle="tooltip" data-placement="left" title="Gọi ngay cho chúng tôi">
+        <a href="tel:0338680362">
+            <img src="assets/images/icon-phone.png" class="icon-service-img"/>
+        </a>
+    </li>
+    <li data-toggle="tooltip" data-placement="left" title="Chat với chúng tôi qua Zalo">
+        <a href="//zalo.me/0338680362" target="_blank">
+            <img src="assets/images/icon-zalo.png" class="icon-service-img"/>
+        </a>
+    </li>
+    <li data-toggle="tooltip" data-placement="left" title="Gửi mail cho chúng tôi">
+        <a href="mailto:haotienphung@gmail.com@gmail.com">
+            <img src="assets/images/icon-mail.png" class="icon-service-img"/>
+        </a>
+    </li>
+    <li data-toggle="tooltip" data-placement="left" title="Liên hệ với chúng tôi">
+        <a href="#" target="_blank">
+            <img src="assets/images/icon-messager-fb.png" class="icon-service-img"/>
+        </a>
+    </li>
+</ul>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/zebra_tooltips.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.show-more.js"></script>
+<script src="assets/js/script.js"></script>
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v7.0'
+        });
+    };
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
 <style>
 
     .center{
@@ -132,27 +168,27 @@
         margin-left: .5rem;
     }
 
-    .main-banner {
-        background: #87509C;
-        padding: 10px 100px 150px 50px;
-    }
+    /*.main-banner {*/
+    /*    background: #87509C;*/
+    /*    padding: 10px 100px 150px 50px;*/
+    /*}*/
     .center {
         text-align: center;
     }
-    .title-banner {
-        color: #F6F1E9;
-    }
-    .button-banner {
-        margin-top: 30px;
-    }
+    /*.title-banner {*/
+    /*    color: #F6F1E9;*/
+    /*}*/
+    /*.button-banner {*/
+    /*    margin-top: 30px;*/
+    /*}*/
 
-    .main-service {
-        background: #17C2A4;
-        padding: 100px 0;
-    }
-    .title-service {
-        margin-bottom: 50px;
-    }
+    /*.main-service {*/
+    /*    background: #17C2A4;*/
+    /*    padding: 100px 0;*/
+    /*}*/
+    /*.title-service {*/
+    /*    margin-bottom: 50px;*/
+    /*}*/
     .title-service h3 {
         color: #fff;
     }
@@ -164,9 +200,9 @@
         color: #F2FBF9;
         margin-top: 10px;
     }
-    .content-service {
-        color: #fff;
-    }
+    /*.content-service {*/
+    /*    color: #fff;*/
+    /*}*/
     .content-service img {
         width: 150px;
         height: 150px;
@@ -180,19 +216,19 @@
         font-size: 15px;
         padding: 0 40px;
     }
-    .main-team {
-        background: #E7F1F8;
-        padding: 80px 0 100px 0;
-    }
+    /*.main-team {*/
+    /*    background: #E7F1F8;*/
+    /*    padding: 80px 0 100px 0;*/
+    /*}*/
     .main-team .title-team h1 {
         color: #3C4761;
     }
     .main-team .title-line {
         background-color: #C6D8E4;
     }
-    .content-team {
-        margin-top: 60px;
-    }
+    /*.content-team {*/
+    /*    margin-top: 60px;*/
+    /*}*/
     .content-team .circle {
         width: 170px;
         height: 170px;
@@ -207,17 +243,17 @@
         font-weight: bold;
     }
 
-    .font-icon  {
-        display: block;
-        color: white;
+    /*.font-icon  {*/
+    /*    display: block;*/
+    /*    color: white;*/
 
-    }
+    /*}*/
 
 
-    .social-icons  {
-        display: inline-block;
-        margin-right: 10px;
-    }
+    /*.social-icons  {*/
+    /*    display: inline-block;*/
+    /*    margin-right: 10px;*/
+    /*}*/
 
     .social-icons li:last-child {
         margin-right: 0;
@@ -261,13 +297,44 @@
         color: white;
     }
     .footer_main{
-
+background-image: url(assets/images/R.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
         position: relative;
+    }
+    #custom_html-3{
+        margin-top: 120px;
+    }
+    #custom_html-4{
+        margin-top: 120px;
+    }
+
+    ul.icon-service-wrap {
+        width: 50px;
+    }
+    .icon-service-wrap {
+        z-index: 1;
+        position: fixed;
+        right: 20px;
+        top: 60%;
+    }
+
+    .icon-service-img {
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .icon-service-wrap li:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    .icon-service-wrap li {
+        transition: all 0.2s ease-out;
+        margin: 15px 0;
     }
 
 

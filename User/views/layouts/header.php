@@ -13,7 +13,7 @@
 </head>
 <body>
 <!---------------------header------------------>
-<!--<header>-->
+<header>
     <div class="top1">
         <div class="container">
             <div class="header-top row">
@@ -59,11 +59,15 @@
 <!---->
 <!--    </div>-->
 
-<!--</header>-->
+</header>
 
 </body>
 </html>
 <style>
+    header{
+        position: relative;
+
+    }
     a{
         text-decoration: none;
         color: black;
@@ -79,7 +83,7 @@
     background-size: cover;
     width: 100vw;
     height: 130px;
-    position: relative;
+
     /*background-color: seashell;*/
     /*background-image: url(assets/images/bg.jpg);*/
     background-color: black;
@@ -107,7 +111,7 @@
     /*    background-color: seashell;*/
     /*}*/
     .top1{
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 1;
         height: auto;
