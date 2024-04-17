@@ -75,5 +75,10 @@ class HomeController extends Controller {
         ]);
         require_once 'views/layouts/main.php';
     }
+    public function sodotochuc(){
 
+        $this->content = $this->render('views/sodotochuc/sodotochuc.php', [
+        ]);
+        require_once 'views/layouts/main.php';
+    }
 }
