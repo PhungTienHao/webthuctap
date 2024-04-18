@@ -23,25 +23,23 @@ require_once 'controllers/CategoryController.php';
             ?>
 
 
-            <div class="row21" >
+        <a href="#" style="color: black;"> <div class="row21" >
 
                 <div class="main-right col-md-6 col-sm-6 col-xs-12">
                     <img class="secondary-img img-responsive" title="<?php echo $category['title'] ?>"
                          src="../Admin/assets/uploads/<?php echo $category['avatar'] ?>"     width="300px"  height="200px" >
-                    <div class="tiltecontent">
-                    <div>
-                        <b><?php echo $category['title'] ?></b>
-                    </div>
-                    <div class="service-link col-md-6 col-sm-6 col-xs-12">
 
-                        <b ><?php echo $category['content'] ?></b></a>
-                    </div>
+                </div>
+                <div class="tiltecontent" >
+                    <div class="title-service" >
+                        <b style="text-align: center"><?php echo $category['title'] ?></b><br> <hr>
+                        <b style="font-size: 20px;"><?php echo $category['content'] ?></b></a>
                     </div>
                 </div>
 
 
-
             </div>
+    </a>
 
             <br>
         <?php endforeach; ?>
@@ -54,15 +52,24 @@ require_once 'controllers/CategoryController.php';
 <style>
     .link-secondary-wrap {
         margin-top: 25px;
+        width: max-content;
+        margin-left: -90px;
     }
     .row21{
+
         display:flex;
-        flex-wrap: wrap;
+        padding: 12px;
     }
     .containerdv{
         max-width: 1024px;
         margin: auto;
         margin-top:150px
+    }
+    .content-service2{
+        font-weight:bold;
+    }
+    .title-service {
+        font-size: 30px;
     }
 </style>
 

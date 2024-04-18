@@ -117,7 +117,7 @@ class CategoryController extends Controller
       $avatar_files = $_FILES['avatar'];
 
 
-      if (empty($name)) {
+      if (empty($title)) {
         $this->error = 'Cần nhập tên';
       }
       else if ($avatar_files['error'] == 0) {

@@ -59,29 +59,29 @@
         <h5 class="kol"> Các sản phẩm DTSVN mang lại đều đang giải quyết đúng được nhu cầu thị trường,<br> đã được cấp chứng chỉ sở hữu trí tuệ của Nhà nước, sẵn sàng đồng hành cùng tổ chức tín dụng lớn,<br> vừa và nhỏ phát triển một cách tổng thế và bền vững.</h5>
         <div class="f-grid">
             <div class="f-grid-col">
-                <img src="image/a9.jpg" width="230" height="250">
+                <img src="assets/images/a9.jpg" width="230" height="250">
                 <h4 class="tt">Mục tiêu</h4>
                 <p class="t">Luôn sẵn sàng tạo ra những sản phẩm, dịch vụ mang lại hiệu quả nhất cho hoạt động kinh doanh của khách hàng. Tạo ra sự khác biệt với các đối thủ cạnh tranh bằng chất lượng và cam kết về sản phẩm dịch vụ.</p>
 
             </div>
             <div class="f-grid-col">
-                <img src="image/a10.jpg" width="230" height="250">
+                <img src="assets/images/a10.jpg" width="230" height="250">
                 <h4 class="tt">Tầm nhìn</h4>
                 <p class="t">Hoạt động dựa trên Hệ giá trị cốt lõi (CRV). C – Customer Centric : Khách hàng là trọng tâm. R - Responsibility: Trách nhiệm mang lại hiệu quả. V - Values: Giá trị đích thực (Sản phẩm, dịch vụ mang lại sự khác biệt và giá trị cho khách hàng).</p>
 
             </div>
             <div class="f-grid-col">
-                <img src="image/a11.jpg" width="230" height="250">
+                <img src="assets/images/a11.jpg" width="230" height="250">
                 <h4 class="tt">Sứ mệnh</h4>
                 <p class="t">Trở thành công ty có thế mạnh khác biệt vê sản phẩm, dịch vụ trong khối Tài chính Ngân hàng. Nâng cao năng lực cốt lõi, trách nhiệm và sáng tạo.</p>
             </div>
             <div class="f-grid-col">
-                <img src="image/a12.jpg" width="230" height="250">
+                <img src="assets/images/a12.jpg" width="230" height="250">
                 <h4 class="tt">Cam kết</h4>
                 <p class="t">Cung cấp sản phầm phần mềm đem lại giải pháp toàn diện cho các tổ chức tín dụng: hợp lý hóa quy trình làm việc và tăng năng suất công việc. Hóa giải nhiều trở ngại, tiết kiệm chi phí, lợi nhuận tăng cao.</p>
             </div>
             <div class="f-grid-col">
-                <img src="image/a13.jpg" width="230" height="250">
+                <img src="assets/images/a13.jpg" width="230" height="250">
                 <h4 class="tt">Hiệu xuất</h4>
                 <p class="t">Chúng tôi cung cấp giải pháp phần mềm chuyển đổi số đi kèm môi trường làm việc nhóm tương tác trên không gian làm việc số: nơi mà mọi người dùng hệ thống được cộng tác – gắn kết & phát triển.
 
@@ -218,6 +218,9 @@
         cursor: pointer;
         font-size: 20px;
         transition: all 0.5s ease;
+    }
+    .container.center {
+        display: block;
     }
     .bac{
         background: #efebeb;
