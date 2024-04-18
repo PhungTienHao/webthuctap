@@ -1,5 +1,6 @@
 <?php
 require_once 'models/Model.php';
+require_once 'models/Category.php';
 require_once 'controllers/CategoryController.php';
 require_once 'controllers/Controller.php';
 
