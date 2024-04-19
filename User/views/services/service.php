@@ -23,7 +23,7 @@ require_once 'controllers/CategoryController.php';
             ?>
 
 
-        <a href="index.php?controller=product&action=show1" style="color: black;"> <div class="row21" >
+        <a href="index.php?controller=product&action=detail&id=<?php echo $category['id'] ?>"" style="color: black;"> <div class="row21" >
 
                 <div class="main-right col-md-6 col-sm-6 col-xs-12">
                     <img class="secondary-img img-responsive" title="<?php echo $category['title'] ?>"

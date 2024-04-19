@@ -119,4 +119,23 @@ class Product extends Model {
         return $products;
 
     }
+
+    public function getById($id)
+    {
+        $obj_select = $this->connection
+            ->prepare("SELECT products.*, categories.title AS category_title FROM products 
+          INNER JOIN categories ON products.category_id = categories.id WHERE products.category_id = $id");
+
+        $obj_select->execute();
+        return $obj_select->fetch(PDO::FETCH_ASSOC);
+    }
+    public function getCategoryById($id)
+    {
+        $obj_select = $this->connection
+            ->prepare("SELECT * FROM categories WHERE id = $id");
+        $obj_select->execute();
+        $category = $obj_select->fetch(PDO::FETCH_ASSOC);
+
+        return $category;
+    }
 }

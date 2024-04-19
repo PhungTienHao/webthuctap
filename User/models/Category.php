@@ -10,5 +10,13 @@ class Category extends Model {
     $categories = $obj_select_all->fetchAll(PDO::FETCH_ASSOC);
     return $categories;
   }
+    public function getCategoryById($id)
+    {
+        $obj_select = $this->connection
+            ->prepare("SELECT * FROM categories WHERE id = $id");
+        $obj_select->execute();
+        $category = $obj_select->fetch(PDO::FETCH_ASSOC);
 
+        return $category;
+    }
 }

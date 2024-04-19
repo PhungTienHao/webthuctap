@@ -241,4 +241,23 @@ class ProductController extends Controller {
         ]);
         require_once 'views/layouts/main.php';
     }
+    public function detail()
+    {
+        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+            $_SESSION['error'] = 'ID không hợp lệ';
+            header('Location: index.php?controller=product');
+            exit();
+        }
+
+        $id = $_GET['id'];
+        $product_model = new Product();
+        $product = $product_model->getById($id);
+        $category_model = new Category();
+        $categories = $category_model->getCategoryById($id);
+        $this->content = $this->render('views/product/product.php', [
+            'product' => $product,
+            'category'=>$categories,
+        ]);
+        require_once 'views/layouts/main.php';
+    }
 }
