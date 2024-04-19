@@ -10,4 +10,5 @@ class Category extends Model {
     $categories = $obj_select_all->fetchAll(PDO::FETCH_ASSOC);
     return $categories;
   }
+
 }

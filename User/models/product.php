@@ -2,8 +2,9 @@
 
 require_once 'models/Model.php';
 require_once 'controllers/CategoryController.php';
+require_once 'controllers/ProductController.php';
 class Product extends Model {
-    public function getProduct($params = []) {
+    public function getProduct1($params = []) {
         $str_filter = '';
         if (isset($params['category'])) {
             $str_category = $params['category'];
@@ -13,9 +14,101 @@ class Product extends Model {
             $str_price = $params['price'];
             $str_filter .= "AND $str_price";
         }
-        $sql_select = "SELECT products.*, categories.name 
+        $sql_select = "SELECT products.*, categories.title 
           AS category_name FROM products
-          INNER JOIN categories ON products.category_id = categories.id
+          INNER JOIN categories where products.category_id = 1
+          $str_filter";
+
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+
+    }
+    public function getProduct2($params = []) {
+        $str_filter = '';
+        if (isset($params['category'])) {
+            $str_category = $params['category'];
+            $str_filter .= "AND $str_category";
+        }
+        if (isset($params['price'])) {
+            $str_price = $params['price'];
+            $str_filter .= "AND $str_price";
+        }
+        $sql_select = "SELECT products.*, categories.title 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = 2
+          $str_filter";
+
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+
+    }
+    public function getProduct3($params = []) {
+        $str_filter = '';
+        if (isset($params['category'])) {
+            $str_category = $params['category'];
+            $str_filter .= "AND $str_category";
+        }
+        if (isset($params['price'])) {
+            $str_price = $params['price'];
+            $str_filter .= "AND $str_price";
+        }
+        $sql_select = "SELECT products.*, categories.title 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = 3
+          $str_filter";
+
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+
+    }
+    public function getProduct4($params = []) {
+        $str_filter = '';
+        if (isset($params['category'])) {
+            $str_category = $params['category'];
+            $str_filter .= "AND $str_category";
+        }
+        if (isset($params['price'])) {
+            $str_price = $params['price'];
+            $str_filter .= "AND $str_price";
+        }
+        $sql_select = "SELECT products.*, categories.title 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = 4
+          $str_filter";
+
+
+        $obj_select = $this->connection->prepare($sql_select);
+        $obj_select->execute();
+
+        $products = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $products;
+
+    }
+    public function getProduct5($params = []) {
+        $str_filter = '';
+        if (isset($params['category'])) {
+            $str_category = $params['category'];
+            $str_filter .= "AND $str_category";
+        }
+        if (isset($params['price'])) {
+            $str_price = $params['price'];
+            $str_filter .= "AND $str_price";
+        }
+        $sql_select = "SELECT products.*, categories.title 
+          AS category_name FROM products
+          INNER JOIN categories ON products.category_id = 5
           $str_filter";
 
 
