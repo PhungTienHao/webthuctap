@@ -31,4 +31,20 @@ class CategoryController extends Controller
         require_once 'views/layouts/main.php';
 
     }
+    public function detailhome()
+    {
+        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+            $_SESSION['error'] = 'ID không hợp lệ';
+            header('Location: index.php?');
+            exit();
+        }
+        $id = $_GET['id'];
+        $category_model = new Category();
+        $category = $category_model->getCategoryById($id);
+        $this->content = $this->render('views/homes/index.php', [
+            'category' => $category
+        ]);
+        require_once 'views/layouts/main.php';
+
+    }
 }
