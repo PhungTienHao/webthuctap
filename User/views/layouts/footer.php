@@ -313,7 +313,7 @@ background-image: url(assets/images/R.png);
     }
 
     ul.icon-service-wrap {
-        width: 50px;
+        width: 90px;
     }
     .icon-service-wrap {
         z-index: 1;

@@ -65,7 +65,7 @@
 </html>
 <style>
     header{
-        position: relative;
+        position: ;
 
     }
     a{
@@ -83,33 +83,10 @@
     background-size: cover;
     width: 100vw;
     height: 130px;
-
-    /*background-color: seashell;*/
     /*background-image: url(assets/images/bg.jpg);*/
     background-color: black;
     opacity: 0.8;
 }
-    /*header{*/
-    /*    background-position: center;*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-size: cover;*/
-    /*    width: 100vw;*/
-    /*    height: 10vh;*/
-    /*    position: relative;*/
-    /*    !*background-color: seashell;*!*/
-    /*    !*background-image: url(assets/images/bg.jpg);*!*/
-    /*    background-color: black;*/
-    /*    opacity: 0.8;*/
-    /*    }*/
-        /*.bg-image{*/
-    /*    position: absolute;*/
-    /*    content: "";*/
-    /*    width: 100%;*/
-    /*    height: 10%;*/
-    /*    background-color: black;*/
-    /*    opacity: 0.6;*/
-    /*    background-color: seashell;*/
-    /*}*/
     .top1{
         position: fixed;
         width: 100%;

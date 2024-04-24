@@ -101,12 +101,12 @@
                     <div class="item">
                         <div class="featurebox">
                             <div class="featurebox__inner">
-                                <span class="featurebox__icon"><img src="image/a1.png" alt=""></span>
+                                <span class="featurebox__icon"><img src="assets/images/a1.png" alt=""></span>
                                 <div class="featurebox__body">
                                     <div class="translate" data-translate=".featurebox__text" style="--y: 60px">
                                         <span class="featurebox__number">01</span>
-                                        <h3 class="featurebox__title">Phản hồi và xử lý lỗi trong thời gian ngắn</h3>
-                                        <p class="featurebox__text" style="visibility: visible">Phản hồi và xử lý nhanh chóng các lỗi hệ thống ngay khi khách hàng gặp phải, bằng cả onsite và offsite.</p>
+                                        <h3 class="featurebox__title">Quảng Cáo Và Truyền Thông</h3>
+                                        <p class="featurebox__text" style="visibility: visible">Cung cấp các dịch vụ quảng cáo sản phẩm của khách hàng, Tối ưu hóa lợi ích kinh doanh</p>
                                     </div>
                                 </div>
                             </div>
@@ -115,12 +115,12 @@
                     <div class="item">
                         <div class="featurebox">
                             <div class="featurebox__inner">
-                                <span class="featurebox__icon"><img src="image/a2.png" alt=""></span>
+                                <span class="featurebox__icon"><img src="assets/images/a2.png" alt=""></span>
                                 <div class="featurebox__body">
                                     <div class="translate" data-translate=".featurebox__text" style="--y: 80px">
                                         <span class="featurebox__number">02</span>
-                                        <h3 class="featurebox__title">Hiểu biết cặn kẽ về nghiệp vụ của công ty</h3>
-                                        <p class="featurebox__text" style="visibility: visible">Các câu hỏi của bạn sẽ được trả lời bằng ngôn ngữ mẹ đẻ của bạn. Đội ngũ kỹ thuật của chúng tôi sẽ trả lời, giải thích cho bạn hiểu.</p>
+                                        <h3 class="featurebox__title">Tư Vấn Và Thiết Kế Website</h3>
+                                        <p class="featurebox__text" style="visibility: visible">Cung cấp website phù hợp với yêu cầu cũng như hỗ trợ giải quyết sự cố khi sử dụng website cho khách hàng</p>
                                     </div>
                                 </div>
                             </div>
@@ -129,12 +129,12 @@
                     <div class="item">
                         <div class="featurebox">
                             <div class="featurebox__inner">
-                                <span class="featurebox__icon"><img src="image/a3.png" alt=""></span>
+                                <span class="featurebox__icon"><img src="assets/images/a3.png" alt=""></span>
                                 <div class="featurebox__body">
                                     <div class="translate" data-translate=".featurebox__text" style="--y: 80px">
                                         <span class="featurebox__number">03</span>
-                                        <h3 class="featurebox__title">Không bất đồng ngôn ngữ với khách hàng</h3>
-                                        <p class="featurebox__text" style="visibility: visible">Các câu hỏi của bạn sẽ được trả lời bằng ngôn ngữ mẹ đẻ của bạn. Đội ngũ kỹ thuật của chúng tôi sẽ trả lời, giải thích cho bạn hiểu.</p>
+                                        <h3 class="featurebox__title">Dịch vụ Tên Miền Và Lưu Trữ Dữ Liệu</h3>
+                                        <p class="featurebox__text" style="visibility: visible">Cung cấp tên miền theo yêu cầu khách hàng, Cung cấp nơi lưu trữ dữ liệu cho khách hàng</p>
                                     </div>
                                 </div>
                             </div>
@@ -143,12 +143,12 @@
                     <div class="item">
                         <div class="featurebox">
                             <div class="featurebox__inner">
-                                <span class="featurebox__icon"><img src="image/a4.png" alt=""></span>
+                                <span class="featurebox__icon"><img src="assets/images/a4.png" alt=""></span>
                                 <div class="featurebox__body">
                                     <div class="translate" data-translate=".featurebox__text" style="--y: 80px">
                                         <span class="featurebox__number">04</span>
-                                        <h3 class="featurebox__title">Đội ngũ kĩ sư, chuyên gia giàu kinh nghiệm</h3>
-                                        <p class="featurebox__text" style="visibility: visible">Chúng tôi có đội ngũ chuyên gia kinh nghiệm nhiều năm trong lĩnh vực phần mềm ngành tài chính, ngân hàng. Trải qua hàng trăm dự án lớn nhỏ.</p>
+                                        <h3 class="featurebox__title">Giải Pháp Thương Mại Điện Tử</h3>
+                                        <p class="featurebox__text" style="visibility: visible">Cung cấp các giải pháp kinh doanh điện tử,hỗ trợ kiến thức TMDT tối ưu hóa lợi ích cho khách hàng </p>
                                     </div>
                                 </div>
                             </div>
@@ -157,12 +157,12 @@
                     <div class="item">
                         <div class="featurebox">
                             <div class="featurebox__inner">
-                                <span class="featurebox__icon"><img src="image/a5.png" alt=""></span>
+                                <span class="featurebox__icon"><img src="assets/images/a5.png" alt=""></span>
                                 <div class="featurebox__body">
                                     <div class="translate" data-translate=".featurebox__text" style="--y: 80px">
                                         <span class="featurebox__number">05</span>
-                                        <h3 class="featurebox__title">Giải pháp trọn gói tất cả trong một</h3>
-                                        <p class="featurebox__text" style="visibility: visible">Chúng tôi xử lý tất cả các khía cạnh cơ sở hạ tầng CNTT của bạn, bao gồm phần cứng, phần mềm và bất kỳ nhu cầu công nghệ nào khác có liên quan.</p>
+                                        <h3 class="featurebox__title">Giải pháp Bảo Mật An Ninh Mạng</h3>
+                                        <p class="featurebox__text" style="visibility: visible">Tư vấn thiết kế cung cấp các dịch vụ ATTTM giúp bảo vệ thông tin,tài sản của khách hàng</p>
                                     </div>
                                 </div>
                             </div>
@@ -217,11 +217,11 @@
     </section></div>
 <br>
 <br>
+<br>
 <hr>
 <br>
 <br>
 <br>
-    <!--xếp hạng-->
 <div class="mainnn">
         <div class="main-skills">
             <div class="container center">
@@ -299,6 +299,7 @@
             </div>
         </div>
     </div>
+<div class="leader"></div>
 </div>
 </body>
 </html>
@@ -824,7 +825,7 @@
 
         @media (min-width: 768px) {
             .container-custom {
-                max-width:81%;
+                max-width:83%;
                 padding: 0 17px;
                 margin: 0 auto;
             }
@@ -945,7 +946,7 @@
 
     .featurebox__icon {
         display: inline-block;
-        max-width: 45px;
+        max-width: 20px;
         margin-left: auto;
     }
 
@@ -1052,19 +1053,19 @@
         }
 
         .featurebox__icon {
-            max-width: 65px;
+            max-width: 20px;
         }
     }
 
     @media (min-width: 1350px) {
         .featurebox__icon {
-            max-width:80px;
+            max-width:20px;
         }
     }
 
     @media (min-width: 1600px) {
         .featurebox__icon {
-            max-width:95px;
+            max-width:30px;
         }
     }
 
