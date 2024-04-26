@@ -83,12 +83,11 @@
     background-size: cover;
     width: 100vw;
     height: 130px;
-    /*background-image: url(assets/images/bg.jpg);*/
-    background-color: black;
-    opacity: 0.8;
+    background-image: url(assets/images/122.jpg);
+
 }
     .top1{
-        position: absolute;
+        position: relative;
         width: 100%;
         z-index: 1;
         height: auto;

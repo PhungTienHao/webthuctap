@@ -56,7 +56,7 @@
     </div>
 </div>
 <div class="bac">
-        <h5 class="kol"> Các sản phẩm DTSVN mang lại đều đang giải quyết đúng được nhu cầu thị trường,<br> đã được cấp chứng chỉ sở hữu trí tuệ của Nhà nước, sẵn sàng đồng hành cùng tổ chức tín dụng lớn,<br> vừa và nhỏ phát triển một cách tổng thế và bền vững.</h5>
+        <h5 class="kol"> Các sản phẩm TADTVN mang lại đều đang giải quyết đúng được nhu cầu thị trường,<br> đã được cấp chứng chỉ sở hữu trí tuệ của Nhà nước, sẵn sàng đồng hành cùng tổ chức tín dụng lớn,<br> vừa và nhỏ phát triển một cách tổng thế và bền vững.</h5>
         <div class="f-grid">
             <div class="f-grid-col">
                 <img src="assets/images/a9.jpg" width="230" height="250">
@@ -93,8 +93,8 @@
     <section class="section sec-strength">
         <div class="container-custom">
             <div class="titlebox">
-                <span class="titlebox__subtitle">Thế mạnh của DTSVN</span>
-                <h2 class="titlebox__title fz-44">DTSVN đã sẵn sàng để giải quyết mọi vấn đề liên quan đến công nghệ của bạn.</h2>
+                <span class="titlebox__subtitle">Thế mạnh của TADTVN</span>
+                <h2 class="titlebox__title fz-44">TADTVN đã sẵn sàng để giải quyết mọi vấn đề liên quan đến công nghệ của bạn.</h2>
             </div>
             <div class="sec-strength__wrap">
                 <div class="sec-strength__list owl-carousel">
@@ -304,7 +304,7 @@
             <div class="rowleader">
                 <div class="col-xl-5">
                     <div class="titlebox">
-                        <h2 class="titlebox__title fz-44">Leader tại DTSVN</h2>
+                        <h2 class="titlebox__title fz-44">Leader tại TADTVN</h2>
                         <p class="titlebox__text">Đội ngũ chuyên gia giỏi trên 10 năm kinh nghiệm trọng lĩnh vực Tài chính Ngân hàng và Công nghệ Thông tin, sẵn sàng giải quyết bất cứ vấn đề công nghệ của khách hàng.</p>
                     </div>
                 </div>
@@ -320,7 +320,7 @@
                             <div class="teambox__inner" >
                                 <div class="teambox__img" style="background-image: url(image/b1.jpg);"></div>
                                 <div class="teambox__body">
-                                    <h3 class="teambox__name">Ông Nguyễn Bá Chiến</h3>
+                                    <h3 class="teambox__name">Ông ...</h3>
                                     <p class="teambox__text">Chairman & CEO</p>
                                 </div>
                                 <div class="teambox__list">
@@ -374,7 +374,7 @@
                             <div class="teambox__inner">
                                 <div class="teambox__img" style="background-image: url(image/b2.jpg);"></div>
                                 <div class="teambox__body">
-                                    <h3 class="teambox__name">Vũ Bảo Linh</h3>
+                                    <h3 class="teambox__name">...</h3>
                                     <p class="teambox__text">Deputy CEO of Sales</p>
                                 </div>
                                 <div class="teambox__list">
@@ -482,7 +482,7 @@
                             <div class="teambox__inner">
                                 <div class="teambox__img" style="background-image: url(image/b3.jpg);"></div>
                                 <div class="teambox__body">
-                                    <h3 class="teambox__name">Ngô Đạt Thắng</h3>
+                                    <h3 class="teambox__name">...</h3>
                                     <p class="teambox__text">Deputy CEO of Business</p>
                                 </div>
                                 <div class="teambox__list">
@@ -623,16 +623,18 @@
         color: red;
         text-align: center;
     }
+    </style>
     /* xếp hạng sp                            */
+    <style>
     .mainnn{
-
-
     }
 
     .main-skills {
         padding: 50px 0 200px;
         color: #FFFFFF;
         text-align: center;
+        position: sticky;
+
     }
     .title-skills h3 {
         color: #3B4660;
@@ -736,7 +738,12 @@
         stroke: #EB7D4B;
         stroke-dashoffset: calc(440px - (440px * 85)/100);
     }
-    <style>
+    </style>
+<!--sevice-->
+<style>
+    .service {
+        position: sticky;
+    }
      element.style {
          visibility: visible;
      }
@@ -1535,8 +1542,6 @@
         display: flex;
         flex-wrap: nowrap;
     }
-
-
 </style>
 </style>
 <!--leader-->
@@ -2445,6 +2450,9 @@
 
                 .sec-teamLeader__slide .owl-carousel .owl-nav button.owl-next span {
                     margin-left: 5px;
+                }
+                .leader {
+                    position: sticky;
                 }
 
 </style>

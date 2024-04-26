@@ -1,5 +1,6 @@
 <?php ?>
-<div class="text">
+<div>
+<div class="texthdkd">
     <h3>HOẠT ĐỘNG KINH DOANH</h3>
     <P class="t">Công ty TNHH Đào tạo và chuyển giao công nghệ số VN là một trong những công ty cung cấp các dịch vụ về truyền thông với một đội ngũ nhân viên được đào tạo chuyên nghiệp với trình độ chuyên môn cao. Cán bộ, nhân viên của  công ty luôn tâm niệm hai chữ “Chất lượng” là mục tiêu kinh doanh của doanh nghiệp. “Chất lượng” của công ty được thể hiện trong từng khâu, từng giai đoạn và mọi lúc mọi nơi. Chính điều này đã tạo nên niềm tin của khách hàng đối với công ty.</P>
 </div>
@@ -8,10 +9,10 @@
     <div class="sodo">
         <img src="assets/images/sodotochuc.png">
     </div>
-
+</div>
 </div>
 <style>
-    .text{
+    .texthdkd{
     margin: 100px 100px 0 100px;
         padding: 30px 0 100px 0;
         text-align: center;

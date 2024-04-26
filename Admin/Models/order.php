@@ -4,22 +4,20 @@ require_once 'models/Model.php';
 class Order extends Model
 {
     public $id;
-    public $fullname;
+    public $name;
     public $address;
-    public $mobile;
+    public $phone;
     public $email;
     public $note;
     public $price_total;
-    public $payment_status;
     public $created_at;
     public $product_id;
     public $price;
-    public $Title;
+
 
     public function getAll(){
         $obj_select = $this->connection
-            ->prepare("SELECT orders.*, order_details.order_id, order_details.product_id FROM orders
-                        INNER JOIN order_details ON orders.id = order_details.order_id
+            ->prepare("SELECT orders.*, orders.id, orders.product_id FROM orders
                         ORDER BY orders.created_at DESC
                         ");
         $arr_select = [];
@@ -30,7 +28,7 @@ class Order extends Model
     }
     public function getdetail(){
         $obj_select = $this->connection
-            ->prepare("SELECT * FROM orders JOIN order_details JOIN products");
+            ->prepare("SELECT * FROM orders  JOIN products");
         $arr_select = [];
         $obj_select->execute($arr_select);
         $detail = $obj_select->fetchAll(PDO::FETCH_ASSOC);
