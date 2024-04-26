@@ -299,7 +299,242 @@
             </div>
         </div>
     </div>
-<div class="leader"></div>
+<div class="leader"><section class="section sec-teamLeader">
+        <div class="container-custom">
+            <div class="rowleader">
+                <div class="col-xl-5">
+                    <div class="titlebox">
+                        <h2 class="titlebox__title fz-44">Leader tại DTSVN</h2>
+                        <p class="titlebox__text">Đội ngũ chuyên gia giỏi trên 10 năm kinh nghiệm trọng lĩnh vực Tài chính Ngân hàng và Công nghệ Thông tin, sẵn sàng giải quyết bất cứ vấn đề công nghệ của khách hàng.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec-teamLeader__content">
+                <div class="rowleader">
+
+                </div>
+                <div class="rowleader">
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="#popup-team" class="teambox btn-popupTeam">
+                            <div class="teambox__inner" >
+                                <div class="teambox__img" style="background-image: url(image/b1.jpg);"></div>
+                                <div class="teambox__body">
+                                    <h3 class="teambox__name">Ông Nguyễn Bá Chiến</h3>
+                                    <p class="teambox__text">Chairman & CEO</p>
+                                </div>
+                                <div class="teambox__list">
+                                    <ul class="">
+                                        <li>
+                                            <div class="item-inner" >
+                                                <span>01</span>
+                                                <div class="rowleader">
+                                                    <div class="col-xl-5">
+                                                        <h3>Trình độ <br>học vấn</h3>
+                                                    </div>
+                                                    <div class="col-xl-6 offset-xl-1">
+                                                        <p>Tốt nghiệp Đại học quốc gia Hà Nội</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-inner">
+                                                <span>02</span>
+                                                <div class="rowleader">
+                                                    <div class="col-xl-5">
+                                                        <h3>Kinh nghiệm <br>làm việc</h3>
+                                                    </div>
+                                                    <div class="col-xl-6 offset-xl-1">
+                                                        <p>Kinh nghiệm hơn 20 năm trong lĩnh vực bán hàng và lãnh đạo kinh doanh với các công ty công nghệ hàng đầu thế giới tại Việt Nam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-inner">
+                                                <span>03</span>
+                                                <div class="rowleader">
+                                                    <div class="col-xl-5">
+                                                        <h3>Lĩnh vực <br>chuyên môn</h3>
+                                                    </div>
+                                                    <div class="col-xl-6 offset-xl-1">
+                                                        <p>Có kiến ​​thức vững chắc và đã được chứng minh trong việc chuyển đổi kỹ thuật số tập trung vào dịch vụ Tài chính & Ngân hàng.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="#popup-team" class="teambox btn-popupTeam">
+                            <div class="teambox__inner">
+                                <div class="teambox__img" style="background-image: url(image/b2.jpg);"></div>
+                                <div class="teambox__body">
+                                    <h3 class="teambox__name">Vũ Bảo Linh</h3>
+                                    <p class="teambox__text">Deputy CEO of Sales</p>
+                                </div>
+                                <div class="teambox__list">
+                                    <ul class="">
+                                        <li>
+                                            <div class="item-inner">
+                                                <span>01</span>
+                                                <div class="rowleader">
+                                                    <div class="col-xl-5">
+                                                        <h3>Trình độ <br>học vấn</h3>
+                                                    </div>
+                                                    <div class="col-xl-6 offset-xl-1">
+                                                        <p>Tốt nghiệp  Đại học khoa học xã hội và nhân văn - ĐHQGHN</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-inner">
+                                                <span>02</span>
+                                                <div class="rowleader">
+                                                    <div class="col-xl-5">
+                                                        <h3>Kinh nghiệm <br>làm việc</h3>
+                                                    </div>
+                                                    <div class="col-xl-6 offset-xl-1">
+                                                        <p>Có kinh nghiệm xây dựng đội ngũ, phát triển kênh đối tác</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-inner">
+                                                <span>03</span>
+                                                <div class="rowleader">
+                                                    <div class="col-xl-5">
+                                                        <h3>Lĩnh vực <br>chuyên môn</h3>
+                                                    </div>
+                                                    <div class="col-xl-6 offset-xl-1">
+                                                        <p>Xây dựng chuẩn hóa quy trình kinh doanh.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--               <div class="col-6 col-lg-4 col-xl-3" style="display:none">
+                                       <a href="#popup-team" class="teambox btn-popupTeam">
+                                           <div class="teambox__inner">
+                                               <div class="teambox__img" style="background-image: url(image/b3.jpg);"></div>
+                                               <div class="teambox__body">
+                                                   <h3 class="teambox__name">Trần Bá Trọng</h3>
+                                                   <p class="teambox__text">Deputy CEO of Professional Service</p>
+                                               </div>
+                                               <div class="teambox__list">
+                                                   <ul class="">
+                                                       <li>
+                                                           <div class="item-inner">
+                                                               <span>01</span>
+                                                               <div class="row">
+                                                                   <div class="col-xl-5">
+                                                                       <h3>Trình độ <br>học vấn</h3>
+                                                                   </div>
+                                                                   <div class="col-xl-6 offset-xl-1">
+                                                                       <p>Tốt nghiệp đại học kinh doanh và công nghệ Hà Nội</p>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="item-inner">
+                                                               <span>02</span>
+                                                               <div class="row">
+                                                                   <div class="col-xl-5">
+                                                                       <h3>Kinh nghiệm <br>làm việc</h3>
+                                                                   </div>
+                                                                   <div class="col-xl-6 offset-xl-1">
+                                                                       <p>Có hơn 5 năm kinh Nghiêm triển khai trực tiếp các dự án lớn tại Ngân hàng</p>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="item-inner">
+                                                               <span>03</span>
+                                                               <div class="row">
+                                                                   <div class="col-xl-5">
+                                                                       <h3>Lĩnh vực <br>chuyên môn</h3>
+                                                                   </div>
+                                                                   <div class="col-xl-6 offset-xl-1">
+                                                                       <p>Trên 10 năm triển khai các hệ thống lớn và phức tạp cho khách hàng trong và ngoài nước.</p>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                       </li>
+                                                   </ul>
+                                               </div>
+                                           </div>
+                                       </a>
+                                   </div> -->
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="#popup-team" class="teambox btn-popupTeam">
+                            <div class="teambox__inner">
+                                <div class="teambox__img" style="background-image: url(image/b3.jpg);"></div>
+                                <div class="teambox__body">
+                                    <h3 class="teambox__name">Ngô Đạt Thắng</h3>
+                                    <p class="teambox__text">Deputy CEO of Business</p>
+                                </div>
+                                <div class="teambox__list">
+                                    <ul class="">
+                                        <li>
+                                            <div class="item-inner">
+                                                <span>01</span>
+                                                <div class="rowleader">
+                                                    <div class="col-xl-5">
+                                                        <h3>Trình độ <br>học vấn</h3>
+                                                    </div>
+                                                    <div class="col-xl-6 offset-xl-1">
+                                                        <p>Tốt nghiệp Đại học kinh tế quốc dân</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-inner">
+                                                <span>02</span>
+                                                <div class="rowleader">
+                                                    <div class="col-xl-5">
+                                                        <h3>Kinh nghiệm <br>làm việc</h3>
+                                                    </div>
+                                                    <div class="col-xl-6 offset-xl-1">
+                                                        <p>Có kỹ năng về Tư vấn Kinh doanh, Quy trình Kinh doanh, Kỹ năng Phân tích, Cơ sở dữ liệu Oracle, Quản lý Dự án và Huấn luyện</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-inner">
+                                                <span>03</span>
+                                                <div class="rowleader">
+                                                    <div class="col-xl-5">
+                                                        <h3>Lĩnh vực <br>chuyên môn</h3>
+                                                    </div>
+                                                    <div class="col-xl-6 offset-xl-1">
+                                                        <p>Có kinh nghiệm và kiến ​​thức thực sự trong ngành ngân hàng.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div>
 </div>
 </body>
 </html>
@@ -1304,6 +1539,914 @@
 
 </style>
 </style>
+<!--leader-->
+<style>
 
+    .section,section {
+        position: relative;
+        z-index: 2;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: 768px) {
+        .section,section {
+            padding-top:90px;
+            padding-bottom: 100px;
+        }
+    }
+
+    @media (min-width: 1260px) {
+        .section,section {
+            padding-top:100px;
+            padding-bottom: 100px;
+        }
+    }
+
+    @media (min-width: 1350px) {
+        .section,section {
+            padding-top:160px;
+            padding-bottom: 160px;
+        }
+    }
+    ol,ul {
+        padding-left: 2rem;
+    }
+
+    ol,ul,dl {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    ol ol,ul ul,ol ul,ul ol {
+        margin-bottom: 0;
+    }
+
+    dt {
+        font-weight: 700;
+    }
+
+    dd {
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+    }
+
+    blockquote {
+        margin: 0 0 1rem;
+    }
+
+    b,strong {
+        font-weight: bolder;
+    }
+
+    small {
+        font-size: 0.875em;
+    }
+
+    mark {
+        padding: 0.2em;
+        background-color: #fcf8e3;
+    }
+
+    sub,sup {
+        position: relative;
+        font-size: 0.75em;
+        line-height: 0;
+        vertical-align: baseline;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+    a:not([href]):not([class]),a:not([href]):not([class]):hover {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    pre,code,kbd,samp {
+
+        font-size: 1em;
+        direction: ltr;
+        unicode-bidi: bidi-override;
+    }
+
+    pre {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        overflow: auto;
+        font-size: 0.875em;
+    }
+
+    pre code {
+        font-size: inherit;
+        color: inherit;
+        word-break: normal;
+    }
+
+    code {
+        font-size: 0.875em;
+        color: #d63384;
+        word-wrap: break-word;
+    }
+
+    a > code {
+        color: inherit;
+    }
+
+    kbd {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.875em;
+        color: #fff;
+        background-color: #212529;
+        border-radius: 0.2rem;
+    }
+
+    @media (min-width: 1200px) {
+        legend {
+            font-size:1.5rem;
+        }
+    }
+
+    legend + * {
+        clear: left;
+    }
+
+
+    ::-webkit-inner-spin-button {
+        height: auto;
+    }
+
+    [type=search] {
+        outline-offset: -2px;
+        -webkit-appearance: textfield;
+    }
+
+    ::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    ::-webkit-color-swatch-wrapper {
+        padding: 0;
+    }
+
+    ::-webkit-file-upload-button {
+        font: inherit;
+    }
+
+
+
+    ::-webkit-file-upload-button {
+        font: inherit;
+        -webkit-appearance: button;
+    }
+
+    output {
+        display: inline-block;
+    }
+
+    iframe {
+        border: 0;
+    }
+
+    summary {
+        display: list-item;
+        cursor: pointer;
+    }
+
+    progress {
+        vertical-align: baseline;
+    }
+
+    [hidden] {
+        display: none !important;
+    }
+
+
+
+    .rowleader {
+        --bs-gutter-x: 30px;
+        --bs-gutter-y: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: calc(var(--bs-gutter-y) * -1);
+        margin-right: calc(var(--bs-gutter-x) / -2);
+        margin-left: calc(var(--bs-gutter-x) / -2);
+    }
+
+    .rowleader > * {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) / 2);
+        padding-left: calc(var(--bs-gutter-x) / 2);
+        margin-top: var(--bs-gutter-y);
+    }
+
+
+    .row-cols-auto > * {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .row-cols-1 > * {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .row-cols-2 > * {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .row-cols-3 > * {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+    }
+
+    .row-cols-4 > * {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .row-cols-5 > * {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 20%;
+    }
+
+    .row-cols-6 > * {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 16.6666666667%;
+    }
+
+
+
+    @media (min-width: 576px) {
+
+
+
+        .row-cols-sm-auto > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+        }
+
+        .row-cols-sm-1 > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .row-cols-sm-2 > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        .row-cols-sm-3 > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: 33.3333333333%;
+        }
+
+        .row-cols-sm-4 > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: 25%;
+        }
+
+        .row-cols-sm-5 > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: 20%;
+        }
+
+        .row-cols-sm-6 > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: 16.6666666667%;
+        }
+
+        @media (min-width: 768px) {
+
+
+            .row-cols-md-auto > * {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: auto;
+            }
+
+            .row-cols-md-1 > * {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: 100%;
+            }
+
+            .row-cols-md-2 > * {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: 50%;
+            }
+
+            .row-cols-md-3 > * {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: 33.3333333333%;
+            }
+
+            .row-cols-md-4 > * {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: 25%;
+            }
+
+            .row-cols-md-5 > * {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: 20%;
+            }
+
+            .row-cols-md-6 > * {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: 16.6666666667%;
+            }
+
+            @media (min-width: 992px) {
+
+
+                .row-cols-lg-auto > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: auto;
+                }
+
+                .row-cols-lg-1 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 100%;
+                }
+
+                .row-cols-lg-2 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+
+                .row-cols-lg-3 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 33.3333333333%;
+                }
+
+                .row-cols-lg-4 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 25%;
+                }
+
+                .row-cols-lg-5 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 20%;
+                }
+
+                .row-cols-lg-6 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 16.6666666667%;
+                }
+
+                .col-lg-4 {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 33.3333333333%;
+                }
+
+            }
+
+            @media (min-width: 1260px) {
+
+                .row-cols-xl-auto > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: auto;
+                }
+
+                .row-cols-xl-1 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 100%;
+                }
+
+                .row-cols-xl-2 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+
+                .row-cols-xl-3 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 33.3333333333%;
+                }
+
+                .row-cols-xl-4 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 25%;
+                }
+
+                .row-cols-xl-5 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 20%;
+                }
+
+                .row-cols-xl-6 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 16.6666666667%;
+                }
+
+
+                .col-xl-3 {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 25%;
+                }
+
+                .col-xl-5 {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 41.6666666667%;
+                }
+
+                .col-xl-6 {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+
+
+                .offset-xl-1 {
+                    margin-left: 8.3333333333%;
+                }
+
+            }
+
+            @media (min-width: 1350px) {
+
+
+                .row-cols-xxl-auto > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: auto;
+                }
+
+                .row-cols-xxl-1 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 100%;
+                }
+
+                .row-cols-xxl-2 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+
+                .row-cols-xxl-3 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 33.3333333333%;
+                }
+
+                .row-cols-xxl-4 > * {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: 25%;
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+
+
+                svg {
+                    vertical-align: middle;
+                }
+
+                [data-parallax=bg] {
+                    height: 110% !important;
+                }
+
+                @media (min-width: 768px) {
+                    [data-parallax=bg] {
+                        height:150% !important;
+                    }
+                }
+
+                [data-parallax=bg][data-revest="-1"] {
+                    top: auto !important;
+                    bottom: 0 !important;
+                }
+
+
+                .svg-fix svg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                ::-moz-selection {
+                    background: #0E245B;
+                    color: #fff;
+                }
+
+                ::selection {
+                    background: #0E245B;
+                    color: #fff;
+                }
+
+                ::-moz-selection {
+                    background: #0E245B;
+                    color: #fff;
+                }
+
+                img::-moz-selection {
+                    background: transparent;
+                }
+
+                img::selection {
+                    background: transparent;
+                }
+
+                img::-moz-selection {
+                    background: transparent;
+                }
+
+                h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                a {
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+
+                a:hover,a:focus {
+                    color: #0F1D63;
+                }
+
+                .btn-text span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: relative;
+                    padding-right: 5px;
+                    margin-left: 10px;
+                }
+
+                .container-custom {
+                    padding: 0 22px;
+                }
+
+
+                @media (min-width: 768px) {
+                    .container-custom {
+                        max-width:81%;
+                        padding: 0 17px;
+                        margin: 0 auto;
+                    }
+                }
+
+                @media (min-width: 1350px) {
+                    .rowleader {
+                        margin-left:-17px;
+                        margin-right: -17px;
+                    }
+
+                }
+                .swiper-pagination span {
+                    margin: 0 7px;
+                }
+
+
+                @media (min-width: 768px) {
+                    .titlebox {
+                        margin-bottom:50px;
+                    }
+                    .titlebox__text {
+                        margin-top: 15px;
+                    }
+
+                }
+
+                @media (min-width: 992px) {
+
+
+                    .titlebox {
+                        margin-bottom: 60px;
+                    }
+
+
+                }
+
+                @media (min-width: 1260px) {
+
+                    .titlebox__text {
+                        margin-top: 20px;
+                    }
+                }
+
+                @media (min-width: 1350px) {
+
+
+                    .titlebox__text {
+                        margin-top: 24px;
+                    }
+                }
+
+                @media (min-width: 1600px) {
+
+                    .fz-44 {
+                        font-size: 44px !important;
+                    }
+
+                    .titlebox {
+                        margin-bottom: 88px;
+                    }
+                }
+
+
+                .clientbox__inner img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    opacity: 0.5;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                }
+
+                .clientbox:hover .clientbox__inner img {
+                    -webkit-filter: grayscale(0);
+                    filter: grayscale(0);
+                    opacity: 1;
+                }
+
+                .testimonial .rowleader {
+                    margin: 0;
+                }
+
+                .themebox__img img {
+                    width: 100%;
+                }
+
+
+                .themebox__title a:hover {
+                    color: #0F1D63;
+                }
+
+
+                .teambox {
+                    display: block;
+                    margin-bottom: 30px;
+                }
+
+                .teambox__inner {
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .teambox__img {
+                    display: block;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #50D6AC;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                }
+
+                .teambox__img:before {
+                    content: "";
+                    display: block;
+                    padding-top: 117%;
+                }
+
+                .teambox__name {
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    margin-bottom: 5px;
+                }
+
+                .teambox__text {
+                    font-size: 11px;
+                    font-weight: 300;
+                    color: rgba(255,255,255,0.5);
+                    margin: 0;
+                }
+
+                .teambox__list {
+                    display: none;
+                }
+
+                @media (min-width: 768px) {
+                    .teambox__img {
+                        margin-bottom:20px;
+                    }
+
+                    .teambox__name {
+                        font-size: 16px;
+                    }
+
+                    .teambox__text {
+                        font-size: 14px;
+                    }
+                }
+
+                @media (min-width: 1350px) {
+                    .teambox__name {
+                        font-size:20px;
+                    }
+
+                    .teambox__text {
+                        font-size: 16px;
+                    }
+                }
+
+                .modal-team__close svg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .modal-team__close svg path {
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                }
+
+
+
+                .modal-team__list ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .modal-team__list ul li {
+                    border-top: 1px solid #E5E5E5;
+                    padding: 10px 0;
+                }
+
+                .modal-team__list ul li:last-child {
+                    padding-bottom: 0;
+                }
+
+                .modal-team__list ul .item-inner span {
+                    display: inline-block;
+                    font-size: 12px;
+                    color: rgba(15,29,99,0.4);
+                    line-height: 1;
+                    margin-bottom: 5px;
+                }
+
+                .modal-team__list ul .item-inner h3 {
+                    font-size: 16px;
+                    color: #0F1D63;
+                    margin-bottom: 5px;
+                }
+
+                .modal-team__list ul .item-inner p {
+                    font-size: 14px;
+                    color: #0F1D63;
+                    margin: 0;
+                }
+
+                .sec-teamLeader {
+                    background-color: #0F1D63;
+                }
+
+                .sec-teamLeader .titlebox__title {
+                    color: #50D6AC;
+                }
+
+                .sec-teamLeader .titlebox__text {
+                    color: #fff;
+                }
+
+                @media (min-width: 1350px) {
+                    .sec-teamLeader .titlebox__text {
+                        font-size:18px;
+                    }
+                }
+
+                @media (max-width: 767.98px) {
+                    .sec-teamLeader__content > .rowleader {
+                        margin-left:-6px;
+                        margin-right: -6px;
+                    }
+                }
+                .sec-teamLeader__slide .owl-carousel .owl-nav button.owl-prev span,.sec-teamLeader__slide .owl-carousel .owl-nav button.owl-next span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #6F77A1;
+                }
+                .sec-teamLeader__slide .owl-carousel .owl-nav button.owl-prev:hover span,.sec-teamLeader__slide .owl-carousel .owl-nav button.owl-next:hover span {
+                    background-color: #fff;
+                }
+                .sec-teamLeader__slide .owl-carousel .owl-nav button.owl-prev span {
+                    margin-right: 5px;
+                }
+
+                .sec-teamLeader__slide .owl-carousel .owl-nav button.owl-next span {
+                    margin-left: 5px;
+                }
+
+</style>
 
 

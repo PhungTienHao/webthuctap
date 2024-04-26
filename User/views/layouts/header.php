@@ -88,7 +88,7 @@
     opacity: 0.8;
 }
     .top1{
-        position: fixed;
+        position: absolute;
         width: 100%;
         z-index: 1;
         height: auto;
