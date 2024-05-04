@@ -48,7 +48,7 @@
                         </div>
                     </li>
                     <li><a href="#">Đào Tạo</a> </li>
-                    <li><a href="#">Thanh Toán</a> </li>
+                    <li><a href="index.php?controller=cart&action=index">Thanh Toán</a> </li>
                 </ul>
 
                 <!--<i class="fas fa-bars"></i>-->
